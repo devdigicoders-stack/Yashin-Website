@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  /* Clevaro Palette */
+  --clevaro-bg: #f7f8f5;
+  --clevaro-dark: #163b35;
+  --clevaro-dark-text: #17201d;
+  --clevaro-lime: #d8f36a;
+  --clevaro-lime-hover: #c8e658;
+  --clevaro-sage: #ddede7;
+  --clevaro-muted: #5e6b66;
+  --clevaro-white: #ffffff;
+  --clevaro-border: rgba(22, 59, 53, 0.08);
+  --clevaro-card-border: rgba(22, 59, 53, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--clevaro-bg);
+}
+
+body {
+  background-color: var(--clevaro-bg);
+  color: var(--clevaro-dark-text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: var(--font-space-grotesk), var(--font-plus-jakarta), sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f8f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5d1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #163b35;
+}
+
+/* Card interactive styling */
+.interactive-card {
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+.interactive-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -10px rgba(22, 59, 53, 0.12);
+  border-color: rgba(22, 59, 53, 0.3);
+}
