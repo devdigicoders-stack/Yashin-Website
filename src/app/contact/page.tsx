@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
@@ -15,18 +14,9 @@ export default function ContactPage() {
     <main className="min-h-screen flex flex-col bg-[#f7f8f5]">
       <Navbar />
 
-      {/* Hero Banner with Page 19 Backcover Skyline */}
-      <section className="relative py-20 sm:py-28 bg-[#163b35] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-25">
-          <Image
-            src="/media/backcover-skyline.png"
-            alt="Page 19 Brochure - Doha Towers & West Bay Commercial Center"
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-8 z-10">
+      {/* Hero Banner */}
+      <section className="py-16 sm:py-24 bg-[#163b35] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="max-w-3xl">
             <span className="px-3.5 py-1.5 rounded-full bg-[#ddede7]/20 text-[#d8f36a] text-xs font-semibold uppercase tracking-wider mb-4 inline-block">
               State of Qatar • Commercial Registration: 191809
@@ -70,72 +60,70 @@ export default function ContactPage() {
 
             <div className="p-6 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/10">
               <ShieldCheck className="w-6 h-6 text-[#163b35] mb-3" />
-              <h4 className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider mb-1">Commercial License</h4>
+              <h4 className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider mb-1">C.R. Registration</h4>
               <p className="text-base font-bold text-[#163b35]">C.R. No: 191809</p>
-              <p className="text-xs text-[#5e6b66] mt-1">Registered in State of Qatar</p>
+              <p className="text-xs text-[#5e6b66] mt-1">Fully registered Qatari W.L.L.</p>
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* Leadership Contact Directives */}
-      <section className="py-12 bg-[#f7f8f5] border-b border-[#163b35]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <div className="p-6 sm:p-8 rounded-3xl bg-white border border-[#163b35]/10 flex flex-col sm:flex-row items-center gap-6 shadow-sm">
-              <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-[#163b35]/10 bg-[#ddede7]">
-                <Image
-                  src="/media/md-somun-abdul.png"
-                  alt="Md. Somun Abdul - Managing Director (Page 2)"
-                  fill
-                  sizes="80px"
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <span className="text-[11px] font-bold text-[#163b35] bg-[#ddede7] px-3 py-1 rounded-full uppercase">
-                  Managing Director
-                </span>
-                <h3 className="text-xl font-bold text-[#163b35] mt-2">Md. Somun Abdul</h3>
-                <p className="text-xs text-[#5e6b66] mt-1 mb-3">Direct Executive Oversight & Strategic Contracts</p>
-                <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#163b35]">
-                  <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5" /> +974 7771 5332</span>
-                  <span className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5" /> somuns713@gmail.com</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6 sm:p-8 rounded-3xl bg-white border border-[#163b35]/10 flex flex-col sm:flex-row items-center gap-6 shadow-sm">
-              <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-[#163b35]/10 bg-[#ddede7]">
-                <Image
-                  src="/media/omar-faruk.png"
-                  alt="Omar Faruk - Supervisor (Page 2)"
-                  fill
-                  sizes="80px"
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <span className="text-[11px] font-bold text-[#163b35] bg-[#ddede7] px-3 py-1 rounded-full uppercase">
-                  Operational Supervisor
-                </span>
-                <h3 className="text-xl font-bold text-[#163b35] mt-2">Omar Faruk</h3>
-                <p className="text-xs text-[#5e6b66] mt-1 mb-3">Field Operations, Site Inspection & Manpower Deployment</p>
-                <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#163b35]">
-                  <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5" /> +974 7776 2177</span>
-                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5" /> Doha Field Headquarters</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Main Interactive Contact Section */}
+      {/* Main Interactive Form */}
       <ContactSection />
+
+      {/* Direct Leadership & Key Contact Persons */}
+      <section className="py-20 bg-white border-t border-[#163b35]/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <div className="max-w-2xl mb-12">
+            <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Executive Management</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#163b35] mt-2">
+              Speak Directly with Leadership
+            </h2>
+            <p className="text-sm text-[#5e6b66] mt-2">
+              For major contracting ventures, tenders, and multi-facility partnerships in Qatar.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
+            <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/10">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-2xl bg-[#163b35] text-[#d8f36a] flex items-center justify-center font-bold text-xl">
+                  SA
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-[#163b35]">MD. SOMUN ABDUL</h4>
+                  <p className="text-xs font-bold text-[#163b35] uppercase tracking-wider">Managing Director</p>
+                </div>
+              </div>
+              <p className="text-xs text-[#5e6b66] leading-relaxed mb-4">
+                Available for corporate consultations, joint ventures, and high-value tender agreements across Qatar.
+              </p>
+              <div className="pt-3 border-t border-[#163b35]/10 text-xs text-[#163b35] font-semibold">
+                Phone: +974 7771 5332
+              </div>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/10">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-2xl bg-[#ddede7] text-[#163b35] flex items-center justify-center font-bold text-xl">
+                  OF
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-[#163b35]">OMAR FARUK</h4>
+                  <p className="text-xs font-bold text-[#163b35] uppercase tracking-wider">Operations Supervisor</p>
+                </div>
+              </div>
+              <p className="text-xs text-[#5e6b66] leading-relaxed mb-4">
+                On-site logistics coordinator, technical supervision, safety enforcement, and emergency callouts.
+              </p>
+              <div className="pt-3 border-t border-[#163b35]/10 text-xs text-[#163b35] font-semibold">
+                Phone: +974 7776 2177
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </main>

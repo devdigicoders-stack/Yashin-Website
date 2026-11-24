@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -8,10 +7,7 @@ import {
   Compass, 
   Shield, 
   CheckCircle,
-  Award,
-  Users,
-  Building,
-  CheckCircle2
+  Award
 } from "lucide-react";
 
 export const metadata = {
@@ -24,18 +20,9 @@ export default function AboutPage() {
     <main className="min-h-screen flex flex-col bg-[#f7f8f5]">
       <Navbar />
 
-      {/* Hero Banner with Page 3 Doha West Bay Night Skyline */}
-      <section className="relative py-24 sm:py-32 bg-[#163b35] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-25">
-          <Image
-            src="/media/doha-night-skyline.png"
-            alt="Page 3 Brochure - Doha West Bay Night Skyline"
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-8 z-10">
+      {/* Hero Banner */}
+      <section className="py-20 sm:py-28 bg-[#163b35] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <RevealOnScroll direction="up">
             <div className="max-w-3xl">
               <span className="px-3.5 py-1.5 rounded-full bg-[#ddede7]/20 text-[#d8f36a] text-xs font-semibold uppercase tracking-wider mb-4 inline-block">
@@ -53,7 +40,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 1: About Us Narrative with Page 2 Handshake Banner */}
+      {/* SECTION 1: About Us Narrative */}
       <section className="py-20 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -85,171 +72,30 @@ export default function AboutPage() {
               </RevealOnScroll>
             </div>
 
-            {/* Visual Spotlight: Page 2 Handshake & Page 4 Digital Business Touch */}
-            <div className="lg:col-span-5 space-y-6">
+            {/* Leadership Cards */}
+            <div className="lg:col-span-5 space-y-4">
               <RevealOnScroll direction="right" delay={0.1}>
-                <div className="relative h-64 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-[#0d2723]">
-                  <Image
-                    src="/media/handshake-banner.png"
-                    alt="Brochure Page 2 - Corporate Welcome Handshake"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 450px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4 text-white text-xs font-bold">
-                    Committed to Long-Term Corporate Partnerships in Doha
-                  </div>
-                </div>
-              </RevealOnScroll>
-
-              <RevealOnScroll direction="right" delay={0.2}>
-                <div className="p-6 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 flex items-center gap-4">
-                  <div className="relative w-16 h-16 rounded-2xl overflow-hidden shrink-0 border border-[#163b35]/15 bg-white">
-                    <Image
-                      src="/media/digital-business-touch.png"
-                      alt="Brochure Page 4 - Digital Business Technology Touch"
-                      fill
-                      sizes="64px"
-                      className="object-cover"
-                    />
+                <div className="p-6 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer flex items-center gap-5">
+                  <div className="w-16 h-16 rounded-2xl bg-[#163b35] text-[#d8f36a] flex items-center justify-center font-bold text-2xl shrink-0">
+                    SA
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#163b35]">Dynamic Management (Page 4)</h4>
-                    <p className="text-xs text-[#5e6b66] mt-0.5">Creating an environment where every worker feels involved and committed to client success.</p>
-                  </div>
-                </div>
-              </RevealOnScroll>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2: Leadership with Page 2 Exact Portraits */}
-      <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <RevealOnScroll direction="up">
-            <div className="max-w-2xl mb-12">
-              <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Corporate Leadership</span>
-              <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2">
-                Executive Leadership & Operational Direction
-              </h2>
-              <p className="mt-2 text-sm text-[#5e6b66]">
-                Our management team brings decades of direct contracting, trade compliance, and project engineering leadership across Doha.
-              </p>
-            </div>
-          </RevealOnScroll>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <RevealOnScroll direction="up" delay={0.1}>
-              <div className="p-8 rounded-3xl bg-white border border-[#163b35]/8 shadow-sm hover:shadow-xl hover:border-[#163b35]/25 transition-all duration-300 flex flex-col sm:flex-row items-center gap-6 group">
-                <div className="relative w-28 h-28 rounded-2xl overflow-hidden shrink-0 border-2 border-[#163b35]/10 shadow-md bg-[#ddede7]">
-                  <Image
-                    src="/media/md-somun-abdul.png"
-                    alt="Md. Somun Abdul - Managing Director (Page 2)"
-                    fill
-                    sizes="112px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div>
-                  <span className="text-[11px] font-bold text-[#163b35] px-3 py-1 rounded-full bg-[#ddede7] uppercase">
-                    Managing Director
-                  </span>
-                  <h3 className="text-2xl font-black text-[#163b35] mt-3">Md. Somun Abdul</h3>
-                  <p className="text-xs text-[#5e6b66] leading-relaxed mt-2">
-                    Leads corporate strategy, statutory Qatar C.R. operations, high-level client partnerships, and company-wide technical quality assurance.
-                  </p>
-                </div>
-              </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll direction="up" delay={0.2}>
-              <div className="p-8 rounded-3xl bg-white border border-[#163b35]/8 shadow-sm hover:shadow-xl hover:border-[#163b35]/25 transition-all duration-300 flex flex-col sm:flex-row items-center gap-6 group">
-                <div className="relative w-28 h-28 rounded-2xl overflow-hidden shrink-0 border-2 border-[#163b35]/10 shadow-md bg-[#ddede7]">
-                  <Image
-                    src="/media/omar-faruk.png"
-                    alt="Omar Faruk - Operational Supervisor (Page 2)"
-                    fill
-                    sizes="112px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div>
-                  <span className="text-[11px] font-bold text-[#163b35] px-3 py-1 rounded-full bg-[#ddede7] uppercase">
-                    Operational Supervisor
-                  </span>
-                  <h3 className="text-2xl font-black text-[#163b35] mt-3">Omar Faruk</h3>
-                  <p className="text-xs text-[#5e6b66] leading-relaxed mt-2">
-                    Supervises active field sites across Doha, manages daily trade crew deployment, toolbox talks, and ensures zero QHSE compromise.
-                  </p>
-                </div>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 3: Field Team & Site Manpower Showcase using Page 11 Real Project Photos */}
-      <section className="py-20 bg-white border-b border-[#163b35]/8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div className="lg:col-span-6">
-              <RevealOnScroll direction="left">
-                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Certified Qatar Workforce</span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2 mb-6">
-                  Disciplined Manpower & On-Site Safety Briefings
-                </h2>
-                <p className="text-sm text-[#5e6b66] leading-relaxed mb-6">
-                  Every project executed by Yashin Facilities begins with a comprehensive safety briefing. 
-                  Our workforce of over 100+ certified electricians, plumbers, carpenters, and civil craftsmen 
-                  operate with strict adherence to Qatar Labour and Construction Safety regulations.
-                </p>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 rounded-2xl bg-[#f7f8f5] border border-[#163b35]/8">
-                    <p className="text-2xl font-black text-[#163b35]">100%</p>
-                    <p className="text-xs text-[#5e6b66] mt-1">PPE & Safety Compliance</p>
-                  </div>
-                  <div className="p-4 rounded-2xl bg-[#f7f8f5] border border-[#163b35]/8">
-                    <p className="text-2xl font-black text-[#163b35]">24/7</p>
-                    <p className="text-xs text-[#5e6b66] mt-1">Emergency Maintenance</p>
-                  </div>
-                </div>
-              </RevealOnScroll>
-            </div>
-
-            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-              <RevealOnScroll direction="right" delay={0.1}>
-                <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-white">
-                  <Image
-                    src="/media/site-safety-toolbox-1.png"
-                    alt="Page 11 - Site Safety Toolbox Briefing 1"
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 280px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3 text-white text-[11px] font-bold">
-                    Toolbox Safety Meeting (Page 11)
+                    <h3 className="text-lg font-bold text-[#163b35]">MD. SOMUN ABDUL</h3>
+                    <p className="text-xs font-bold text-[#163b35] uppercase tracking-wider">Managing Director</p>
+                    <p className="text-xs text-[#5e6b66] mt-1 font-medium">Yashin Facilities Management and Services W.L.L.</p>
                   </div>
                 </div>
               </RevealOnScroll>
 
               <RevealOnScroll direction="right" delay={0.2}>
-                <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-white">
-                  <Image
-                    src="/media/overhead-mep-crew.png"
-                    alt="Page 11 - Overhead MEP Ducting Crew on Scaffolding"
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 280px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3 text-white text-[11px] font-bold">
-                    Overhead MEP Crew (Page 11)
+                <div className="p-6 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer flex items-center gap-5">
+                  <div className="w-16 h-16 rounded-2xl bg-[#ddede7] text-[#163b35] flex items-center justify-center font-bold text-2xl shrink-0">
+                    OF
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#163b35]">OMAR FARUK</h3>
+                    <p className="text-xs font-bold text-[#163b35] uppercase tracking-wider">Operations Supervisor</p>
+                    <p className="text-xs text-[#5e6b66] mt-1 font-medium">Field Projects, Logistics & Safety Standards</p>
                   </div>
                 </div>
               </RevealOnScroll>
@@ -259,106 +105,171 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Page 5 Core Pillars with Authentic Brochure Imagery */}
-      <section className="py-20 bg-[#163b35] text-white">
+      {/* SECTION 2: Foreword & Introduction */}
+      <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <RevealOnScroll direction="up">
-            <div className="max-w-2xl mb-12">
-              <span className="text-xs font-bold text-[#d8f36a] uppercase tracking-wider">Foundational Principles (Page 5)</span>
-              <h2 className="text-3xl sm:text-4xl font-black mt-2">
-                Our Objective, Values & Integrity
-              </h2>
-            </div>
-          </RevealOnScroll>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            
             <RevealOnScroll direction="up" delay={0.05}>
-              <div className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between overflow-hidden">
-                <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
-                  <Image
-                    src="/media/objective-tablet.png"
-                    alt="Page 5 - Objective Water Splash Tablet"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black">
-                      <Target className="w-5 h-5" />
-                    </div>
+              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer flex flex-col justify-between h-full">
+                <div>
+                  <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Brochure Foreword</span>
+                  <h3 className="text-2xl font-black text-[#163b35] mt-2 mb-4">
+                    A Decade of Continuous Progress Since 2014
+                  </h3>
+                  <div className="space-y-3 text-sm text-[#5e6b66] leading-relaxed font-normal">
+                    <p>
+                      "It brings me great pleasure to introduce Yashin Facilities Management and Hospitality & Cleaning 
+                      Services W.L.L. and to highlight our company's achievements. This seed, which was established in 2014, 
+                      has steadily grown and continued to show immense progress."
+                    </p>
+                    <p>
+                      "Our philosophy is not to resist change, but rather to adapt ourselves in the face of new challenges 
+                      and take advantage of the newest innovations. As a quality leader, Yashin Facilities Management and 
+                      Services W.L.L. continues to be a company that maintains the highest standards in quality goods and 
+                      services."
+                    </p>
                   </div>
                 </div>
-                <div className="p-7">
-                  <h3 className="text-xl font-bold text-white mb-2">Our Objective</h3>
-                  <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
-                    Striving to achieve excellence in facility and MEP services across Doha, Qatar through 
-                    creativity, responsiveness, and uncompromising quality standards.
-                  </p>
-                  <div className="pt-3 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
-                    Brochure Page 5
-                  </div>
-                </div>
+                <p className="text-xs font-bold text-[#163b35] mt-6 pt-4 border-t border-[#163b35]/8">
+                  — Thanks & Best Regards, Management Team
+                </p>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.15}>
-              <div className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between overflow-hidden">
-                <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
-                  <Image
-                    src="/media/eco-sustainability.png"
-                    alt="Page 5 - Value Eco Tree in Hand"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black">
-                      <Compass className="w-5 h-5" />
-                    </div>
+              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer flex flex-col justify-between h-full">
+                <div>
+                  <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Workplace Introduction</span>
+                  <h3 className="text-2xl font-black text-[#163b35] mt-2 mb-4">
+                    Quality Improvement & Skilled Workforce
+                  </h3>
+                  <div className="space-y-3 text-sm text-[#5e6b66] leading-relaxed font-normal">
+                    <p>
+                      "We believe in creating a workplace where our personnel at all levels of the organization assume full 
+                      responsibility for the quality of work productively and creatively, in an environment in which every worker 
+                      feels involved and committed to the success of the business."
+                    </p>
+                    <p>
+                      "Whether it is a major construction project or a minor maintenance service, we are committed to serve 
+                      and satisfy you to the fullest extent. For us, our service is our investment. We believe in the right 
+                      blend of dynamism and innovation, and we encourage team efforts in all our activities."
+                    </p>
                   </div>
                 </div>
-                <div className="p-7">
-                  <h3 className="text-xl font-bold text-white mb-2">Corporate Values</h3>
-                  <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
-                    Embracing modern engineering approaches and flexible teamwork that guide day-to-day 
-                    decisions and provide a common language to communicate through performance.
-                  </p>
-                  <div className="pt-3 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
-                    Brochure Page 5
-                  </div>
+                <p className="text-xs font-bold text-[#163b35] mt-6 pt-4 border-t border-[#163b35]/8">
+                  — Quality & Safety Operations Division
+                </p>
+              </div>
+            </RevealOnScroll>
+
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: Objective, Values & Integrity */}
+      <section className="py-20 bg-white border-b border-[#163b35]/8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          
+          <RevealOnScroll direction="up">
+            <div className="max-w-2xl mb-12">
+              <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Corporate Philosophy</span>
+              <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2">
+                Our Objective, Value & Integrity
+              </h2>
+              <p className="mt-2 text-sm text-[#5e6b66]">
+                Guiding our day-to-day operations and field engineering standards.
+              </p>
+            </div>
+          </RevealOnScroll>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <RevealOnScroll direction="up" delay={0.05}>
+              <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer h-full">
+                <div className="w-12 h-12 rounded-full bg-[#163b35] text-[#d8f36a] flex items-center justify-center font-bold mb-6">
+                  <Target className="w-6 h-6" />
                 </div>
+                <h3 className="text-xl font-bold text-[#163b35] mb-3">Our Objective</h3>
+                <p className="text-sm text-[#5e6b66] leading-relaxed font-normal">
+                  "Yashin Facilities Management and Services W.L.L. strives to achieve excellence in marketing goods and 
+                  services in Doha - Qatar through creativity, innovativeness and quality service. Aims to satisfy specific 
+                  needs of the whole community."
+                </p>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll direction="up" delay={0.15}>
+              <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer h-full">
+                <div className="w-12 h-12 rounded-full bg-[#163b35] text-[#d8f36a] flex items-center justify-center font-bold mb-6">
+                  <Compass className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-[#163b35] mb-3">Our Value</h3>
+                <p className="text-sm text-[#5e6b66] leading-relaxed font-normal">
+                  "A company that embraces changes and is flexible enough to create new structures and approaches. At the 
+                  foundation of these efforts are values which serve to guide day-to-day decision making in all activities. 
+                  Its culture is to provide a common language to communicate about 'who we are' through performance."
+                </p>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.25}>
-              <div className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between overflow-hidden">
-                <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
-                  <Image
-                    src="/media/integrity-pledge.png"
-                    alt="Page 5 - Integrity Pledge Hand Over Heart"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black">
-                      <Shield className="w-5 h-5" />
-                    </div>
-                  </div>
+              <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer h-full">
+                <div className="w-12 h-12 rounded-full bg-[#163b35] text-[#d8f36a] flex items-center justify-center font-bold mb-6">
+                  <Shield className="w-6 h-6" />
                 </div>
-                <div className="p-7">
-                  <h3 className="text-xl font-bold text-white mb-2">Integrity First</h3>
-                  <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
-                    Reaching the right decisions faster with absolute transparency in actions and motives. 
-                    Living by "Walk the talk" and fostering true comradeship & brotherhood.
-                  </p>
-                  <div className="pt-3 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
-                    Brochure Page 5
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold text-[#163b35] mb-3">Integrity</h3>
+                <p className="text-sm text-[#5e6b66] leading-relaxed font-normal">
+                  "Integrity allows reaching the right decision faster and giving the speed needed to be competitive. At the 
+                  heart, integrity is transparency in its action, motives and intentions. 'Walk the talk' and creation of 
+                  company feeling, comradeship & brotherhood."
+                </p>
               </div>
             </RevealOnScroll>
+
           </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: Our Vision & 5 Key Attributers */}
+      <section className="py-20 bg-[#163b35] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          
+          <RevealOnScroll direction="up">
+            <div className="max-w-3xl mb-12">
+              <span className="px-3 py-1 rounded-full bg-[#ddede7]/20 text-[#d8f36a] text-xs font-semibold uppercase tracking-wider mb-4 inline-block">
+                Strategic Vision
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white mb-4">
+                Our Vision for Qatar
+              </h2>
+              <p className="text-sm sm:text-base text-[#ddede7]/80 leading-relaxed font-normal">
+                "Yashin Facilities Management and Services W.L.L. vision is to be the leader & corporate in the field of 
+                construction in Qatar. To build, maintain and perpetuate continuing relationship with every customer through 
+                total commitment to quality without compromise, timely completion, excellent construction and safety performance."
+              </p>
+            </div>
+          </RevealOnScroll>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+            {[
+              "To be a valued and respected partner.",
+              "To be a preferred services provider.",
+              "To deliver consistent returns to all stakeholders.",
+              "To be an innovative and cost-effective partner.",
+              "To be a preferred employer."
+            ].map((text, idx) => (
+              <RevealOnScroll key={idx} direction="up" delay={idx * 0.05}>
+                <div className="p-6 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 hover:border-[#d8f36a]/40 hover:bg-[#163b35] transition-all duration-300 transform hover:-translate-y-2 cursor-pointer flex flex-col justify-between h-full">
+                  <span className="w-8 h-8 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-bold text-xs mb-4">
+                    0{idx + 1}
+                  </span>
+                  <p className="text-sm font-bold text-white leading-relaxed">{text}</p>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+
         </div>
       </section>
 

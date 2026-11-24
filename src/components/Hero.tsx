@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import RevealOnScroll from "./RevealOnScroll";
 import { ArrowRight, Award, Shield, Users, CheckCircle } from "lucide-react";
@@ -12,94 +11,48 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Clevaro Hero Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
-          <div className="lg:col-span-7">
-            <RevealOnScroll direction="up" delay={0.05}>
-              <div>
-                
-                {/* Clevaro Badge */}
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ffffff] border border-[#163b35]/10 text-[#163b35] text-xs font-semibold mb-6 shadow-xs">
-                  <span className="w-2 h-2 rounded-full bg-[#163b35]" />
-                  <span>Premium Facilities Management & Contracting • Doha, Qatar</span>
-                </div>
+        <RevealOnScroll direction="up" delay={0.05}>
+          <div className="max-w-3xl mb-12">
+            
+            {/* Clevaro Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ffffff] border border-[#163b35]/10 text-[#163b35] text-xs font-semibold mb-6 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-[#163b35]" />
+              <span>Premium Facilities Management & Contracting • Doha, Qatar</span>
+            </div>
 
-                {/* Clevaro Headline */}
-                <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-[#163b35] tracking-tight leading-[1.05] mb-6">
-                  A Cleaner Space. <br />
-                  A Better Life.
-                </h1>
+            {/* Clevaro Headline (Exact Typography Structure: Huge Two-line H1) */}
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-[#163b35] tracking-tight leading-[1.05] mb-6">
+              A Cleaner Space. <br />
+              A Better Life.
+            </h1>
 
-                {/* Sub-headline */}
-                <p className="text-base sm:text-xl text-[#5e6b66] leading-relaxed mb-8 max-w-2xl font-normal">
-                  Reliable MEP engineering, civil fit-outs, fire safety, and facilities maintenance 
-                  designed around your commercial towers, hotels, and properties in Qatar.
-                </p>
+            {/* Sub-headline */}
+            <p className="text-base sm:text-xl text-[#5e6b66] leading-relaxed mb-8 max-w-2xl font-normal">
+              Reliable MEP engineering, civil fit-outs, fire safety, and facilities maintenance 
+              designed around your commercial towers, hotels, and properties in Qatar.
+            </p>
 
-                {/* Dual CTA */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#d8f36a] hover:bg-[#c8e658] text-[#163b35] font-bold text-sm tracking-tight transition-all shadow-xs hover:scale-[1.02]"
-                  >
-                    <span>Get a Free Quote</span>
-                    <ArrowRight className="w-4 h-4 text-[#163b35]" />
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#ffffff] hover:bg-[#f0f2ee] border border-[#163b35]/15 text-[#163b35] font-bold text-sm tracking-tight transition-all shadow-xs"
-                  >
-                    <span>Explore All Services</span>
-                  </Link>
-                </div>
+            {/* Dual CTA: Clevaro Lime Button + White Button */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#d8f36a] hover:bg-[#c8e658] text-[#163b35] font-bold text-sm tracking-tight transition-all shadow-xs hover:scale-[1.02]"
+              >
+                <span>Get a Free Quote</span>
+                <ArrowRight className="w-4 h-4 text-[#163b35]" />
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#ffffff] hover:bg-[#f0f2ee] border border-[#163b35]/15 text-[#163b35] font-bold text-sm tracking-tight transition-all shadow-xs"
+              >
+                <span>Explore All Services</span>
+              </Link>
+            </div>
 
-              </div>
-            </RevealOnScroll>
           </div>
+        </RevealOnScroll>
 
-          {/* Hero Visual Collage using Authentic Brochure Cover & Commercial Building Photos */}
-          <div className="lg:col-span-5">
-            <RevealOnScroll direction="right" delay={0.15}>
-              <div className="relative">
-                {/* Main Hero Visual Card: Page 1 Authentic Qatar Cover Skyline */}
-                <div className="relative h-[420px] sm:h-[480px] rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-xl group bg-white">
-                  <Image
-                    src="/media/qatar-skyline-hero.png"
-                    alt="Yashin Facilities Qatar Cover - Doha Tornado & Commercial Towers"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 500px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
-                  
-                  {/* Floating Overlay Badge */}
-                  <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#163b35]/10 flex items-center justify-between">
-                    <div>
-                      <p className="text-xs text-[#5e6b66] font-semibold">C.R. No. 191809 • Doha, Qatar</p>
-                      <p className="text-sm font-black text-[#163b35]">Yashin Facilities Management & Services</p>
-                    </div>
-                    <div className="w-9 h-9 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-bold text-xs shrink-0">
-                      ✦
-                    </div>
-                  </div>
-                </div>
-
-                {/* Secondary Inset Visual Card: Page 11 Real Glass Cladding Building */}
-                <div className="absolute -bottom-8 -left-8 w-44 sm:w-52 h-44 sm:h-52 rounded-3xl overflow-hidden border-4 border-white shadow-2xl hidden sm:block bg-white">
-                  <Image
-                    src="/media/acp-glass-commercial-building.png"
-                    alt="Page 11 Authentic Project - Glass Glazing & ACP Cladding Commercial Building"
-                    fill
-                    sizes="220px"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </div>
-
-        {/* Clevaro Trust Bar */}
+        {/* Clevaro Trust Bar (White Card with Pale Sage rounded circle icons) */}
         <RevealOnScroll direction="up" delay={0.2}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-7 rounded-3xl bg-[#ffffff] border border-[#163b35]/10 shadow-xs mb-12">
             
