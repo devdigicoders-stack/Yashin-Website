@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
@@ -34,13 +35,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black text-base">
-                ✦
+            <div className="flex items-center gap-3.5 mb-4">
+              <div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-white p-1 border border-white/20 shadow-md flex items-center justify-center shrink-0">
+                <Image
+                  src="/media/yashin-logo.png"
+                  alt="Yashin Facilities Management FMS Logo"
+                  width={44}
+                  height={44}
+                  className="object-contain"
+                />
               </div>
-              <span className="text-xl font-black tracking-tight text-white uppercase">
-                Yashin Facilities
-              </span>
+              <div className="flex flex-col">
+                <span className="text-xl font-black tracking-tight text-white uppercase leading-none">
+                  Yashin Facilities
+                </span>
+                <span className="text-[10px] text-[#d8f36a] font-bold tracking-wider uppercase mt-1">
+                  Management & Services W.L.L.
+                </span>
+              </div>
             </div>
             <p className="text-sm text-[#ddede7]/70 leading-relaxed mb-6 max-w-sm font-normal">
               Comprehensive facilities management, electro-mechanical engineering (MEP), 
@@ -63,33 +75,37 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-sm font-bold text-white mb-4">Key Divisions</h4>
+            <h4 className="text-sm font-bold text-white mb-4">Core Trades</h4>
             <ul className="space-y-3 text-xs font-medium text-[#ddede7]/70">
-              <li>MEP & Substations</li>
-              <li>Firefighting Systems</li>
-              <li>Civil & Gypsum Works</li>
+              <li>MEP Engineering</li>
               <li>Commercial Cleaning</li>
+              <li>Fire Protection AMC</li>
+              <li>Gypsum Fit-outs</li>
               <li>Manpower Supply</li>
             </ul>
           </div>
 
           <div className="lg:col-span-3">
-            <h4 className="text-sm font-bold text-white mb-4">Qatar Office</h4>
-            <div className="space-y-2 text-xs font-medium text-[#ddede7]/70">
-              <p>P.O. Box: 6288, Doha – Qatar</p>
-              <p>Tel: +974 7771 5332 / 7776 2177</p>
-              <p>Email: somuns713@gmail.com</p>
-            </div>
+            <h4 className="text-sm font-bold text-white mb-4">Doha Headquarters</h4>
+            <ul className="space-y-3 text-xs font-medium text-[#ddede7]/70">
+              <li>P.O. Box: 6288, Doha, Qatar</li>
+              <li>Tel: +974 7771 5332</li>
+              <li>Tel: +974 7776 2177</li>
+              <li>Email: somuns713@gmail.com</li>
+              <li>Managing Director: Md. Somun Abdul</li>
+            </ul>
           </div>
 
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-[#ddede7]/10 py-6 px-4 sm:px-8 text-xs text-[#ddede7]/60">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-medium">
-          <span>© 2026 Yashin Facilities Management and Services W.L.L. All rights reserved.</span>
-          <span>Doha, State of Qatar</span>
+        {/* Bottom Bar */}
+        <div className="mt-16 pt-8 border-t border-[#ddede7]/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[#ddede7]/60 gap-4">
+          <p>© 2026 Yashin Facilities Management and Services W.L.L. All rights reserved.</p>
+          <div className="flex items-center space-x-6">
+            <span>Doha, State of Qatar</span>
+            <span>•</span>
+            <span>C.R. No: 191809</span>
+          </div>
         </div>
       </div>
 
