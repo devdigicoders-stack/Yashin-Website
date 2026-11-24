@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -12,7 +13,8 @@ import {
   ArrowRight,
   CheckCircle2,
   Wrench,
-  Radio
+  Radio,
+  Sparkles
 } from "lucide-react";
 
 export const metadata = {
@@ -26,8 +28,17 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* Header Banner */}
-      <section className="py-20 sm:py-28 bg-[#163b35] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+      <section className="relative py-24 sm:py-32 bg-[#163b35] text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/media/about-banner.png"
+            alt="Doha Skyline Services"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-8 z-10">
           <RevealOnScroll direction="up">
             <div className="max-w-3xl">
               <span className="px-3.5 py-1.5 rounded-full bg-[#ddede7]/20 text-[#d8f36a] text-xs font-semibold uppercase tracking-wider mb-4 inline-block">
@@ -54,7 +65,7 @@ export default function ServicesPage() {
               <div className="max-w-2xl">
                 <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 01 • MEP Systems</span>
                 <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2">
-                  Electrical & Plumbing Constructions
+                  Electrical, Plumbing & Central Cooling
                 </h2>
                 <p className="mt-3 text-sm text-[#5e6b66]">
                   Our expertise covers a wide variety of electro-mechanical designs, high-voltage panel boards, 
@@ -68,26 +79,39 @@ export default function ServicesPage() {
             </div>
           </RevealOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <RevealOnScroll direction="up" delay={0.05}>
-              <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group flex flex-col justify-between h-full">
+              <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#ddede7] text-[#163b35] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#d8f36a] transition-all">
-                    <Zap className="w-6 h-6" />
+                  <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
+                    <Image
+                      src="/media/Gemini_Generated_Image_sqgdbqsqgdbqsqgd.png"
+                      alt="Residential & Commercial Electrification"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 rounded-full bg-white/90 text-[#163b35] text-[11px] font-bold shadow-xs">
+                        Power & Substations
+                      </span>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-[#163b35] mb-2">Residential & Commercial Electrification</h3>
-                  <p className="text-xs text-[#5e6b66] leading-relaxed mb-6">
-                    Design, installation, and commissioning of all electrical equipment, distribution transformers, and substations.
-                  </p>
-                  <ul className="space-y-2 mb-6 text-xs text-[#17201d]">
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Installation & maintenance of all panel boards</li>
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Stadium & playground high-mast lighting</li>
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Electrical pathways & trunking installations</li>
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Wire fault testing & circuit diagnosis</li>
-                  </ul>
+                  <div className="p-7">
+                    <h3 className="text-xl font-bold text-[#163b35] mb-2">Residential & Commercial Electrification</h3>
+                    <p className="text-xs text-[#5e6b66] leading-relaxed mb-6">
+                      Design, installation, and commissioning of all electrical equipment, distribution transformers, and substations.
+                    </p>
+                    <ul className="space-y-2 mb-6 text-xs text-[#17201d]">
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Installation of all panel boards</li>
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Stadium & commercial high-mast lighting</li>
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Cable pathways & containment trunking</li>
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Wire fault testing & circuit diagnosis</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="pt-4 border-t border-[#163b35]/8 flex items-center justify-between">
+                <div className="p-7 pt-0 border-t border-[#163b35]/8 flex items-center justify-between">
                   <span className="text-[11px] font-bold text-[#5e6b66]">Substation Certified</span>
                   <ArrowRight className="w-4 h-4 text-[#163b35] group-hover:translate-x-1.5 transition-transform" />
                 </div>
@@ -95,23 +119,36 @@ export default function ServicesPage() {
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.1}>
-              <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group flex flex-col justify-between h-full">
+              <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#ddede7] text-[#163b35] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#d8f36a] transition-all">
-                    <Droplet className="w-6 h-6" />
+                  <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
+                    <Image
+                      src="/media/Gemini_Generated_Image_l3ebsjl3ebsjl3eb.png"
+                      alt="Domestic & Industrial Plumbing"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 rounded-full bg-white/90 text-[#163b35] text-[11px] font-bold shadow-xs">
+                        Hydraulic Systems
+                      </span>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-[#163b35] mb-2">Domestic & Industrial Plumbing</h3>
-                  <p className="text-xs text-[#5e6b66] leading-relaxed mb-6">
-                    Array of registered plumbing services for multi-story towers, hotels, and industrial sites.
-                  </p>
-                  <ul className="space-y-2 mb-6 text-xs text-[#17201d]">
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Complete bathroom & sanitary renovations</li>
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Industrial geyser installations & boilers</li>
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Plumbing leak checking & acoustic inspection</li>
-                    <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Water saving solutions & pressure boosting</li>
-                  </ul>
+                  <div className="p-7">
+                    <h3 className="text-xl font-bold text-[#163b35] mb-2">Domestic & Industrial Plumbing</h3>
+                    <p className="text-xs text-[#5e6b66] leading-relaxed mb-6">
+                      Array of registered plumbing services for multi-story towers, hotels, and industrial sites.
+                    </p>
+                    <ul className="space-y-2 mb-6 text-xs text-[#17201d]">
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Complete bathroom & sanitary renovations</li>
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Industrial geyser installations & boilers</li>
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Plumbing leak checking & acoustic inspection</li>
+                      <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-[#163b35]" /> Water saving solutions & pressure boosting</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="pt-4 border-t border-[#163b35]/8 flex items-center justify-between">
+                <div className="p-7 pt-0 border-t border-[#163b35]/8 flex items-center justify-between">
                   <span className="text-[11px] font-bold text-[#5e6b66]">Leak Proof Certified</span>
                   <ArrowRight className="w-4 h-4 text-[#163b35] group-hover:translate-x-1.5 transition-transform" />
                 </div>
@@ -119,27 +156,40 @@ export default function ServicesPage() {
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.15}>
-              <div className="p-8 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group flex flex-col justify-between h-full">
+              <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#ddede7] text-[#163b35] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#d8f36a] transition-all">
-                    <Wrench className="w-6 h-6" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#163b35] mb-2">MEP Maintenance Services</h3>
-                  <p className="text-xs text-[#5e6b66] leading-relaxed mb-6">
-                    We undertake all kinds of MEP constructions and maintenance works with flexible engagement contracts.
-                  </p>
-                  <div className="space-y-3 mb-6">
-                    <div className="p-3 rounded-2xl bg-white border border-[#163b35]/8">
-                      <p className="text-xs font-bold text-[#163b35]">Annually Reoccurring Services (AMC)</p>
-                      <p className="text-[11px] text-[#5e6b66]">Year-round routine audits, scheduled maintenance & rapid breakdown callouts.</p>
+                  <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
+                    <Image
+                      src="/media/Gemini_Generated_Image_gqtf8sgqtf8sgqtf.png"
+                      alt="Chilled Water & HVAC Manifolds"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 rounded-full bg-white/90 text-[#163b35] text-[11px] font-bold shadow-xs">
+                        Central Cooling
+                      </span>
                     </div>
-                    <div className="p-3 rounded-2xl bg-white border border-[#163b35]/8">
-                      <p className="text-xs font-bold text-[#163b35]">One-Time Maintenance Services</p>
-                      <p className="text-[11px] text-[#5e6b66]">Emergency breakdown repairs, renovation overhauls & handover inspections.</p>
+                  </div>
+                  <div className="p-7">
+                    <h3 className="text-xl font-bold text-[#163b35] mb-2">MEP Maintenance Services</h3>
+                    <p className="text-xs text-[#5e6b66] leading-relaxed mb-6">
+                      We undertake all kinds of MEP constructions and maintenance works with flexible engagement contracts.
+                    </p>
+                    <div className="space-y-3 mb-6">
+                      <div className="p-3 rounded-2xl bg-white border border-[#163b35]/8">
+                        <p className="text-xs font-bold text-[#163b35]">Annually Reoccurring Services (AMC)</p>
+                        <p className="text-[11px] text-[#5e6b66]">Year-round routine audits, scheduled maintenance & rapid breakdown callouts.</p>
+                      </div>
+                      <div className="p-3 rounded-2xl bg-white border border-[#163b35]/8">
+                        <p className="text-xs font-bold text-[#163b35]">One-Time Maintenance Services</p>
+                        <p className="text-[11px] text-[#5e6b66]">Emergency breakdown repairs, renovation overhauls & handover inspections.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="pt-4 border-t border-[#163b35]/8 flex items-center justify-between">
+                <div className="p-7 pt-0 border-t border-[#163b35]/8 flex items-center justify-between">
                   <span className="text-[11px] font-bold text-[#5e6b66]">24/7 Rapid Response</span>
                   <ArrowRight className="w-4 h-4 text-[#163b35] group-hover:translate-x-1.5 transition-transform" />
                 </div>
@@ -150,7 +200,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 2: Fire Safety */}
+      {/* SECTION 2: Fire Safety with Real Sprinkler Image */}
       <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
@@ -168,9 +218,18 @@ export default function ServicesPage() {
                   and maintenance.
                 </p>
 
-                <div className="p-5 rounded-2xl bg-[#ffffff] border border-[#163b35]/8 mb-6">
-                  <p className="text-xs font-bold text-[#163b35] uppercase tracking-wider">Qatar Civil Defense</p>
-                  <p className="text-xs text-[#5e6b66] mt-1">Full adherence to statutory life-safety regulations.</p>
+                {/* Fire Visual Thumbnail */}
+                <div className="relative h-48 rounded-2xl overflow-hidden border border-[#163b35]/10 mb-6 shadow-sm">
+                  <Image
+                    src="/media/Gemini_Generated_Image_w7l72cw7l72cw7l7.png"
+                    alt="Fire sprinkler loop and red hydrant valves"
+                    fill
+                    sizes="450px"
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-[#163b35]/90 text-white text-[11px] font-bold px-3 py-1 rounded-full">
+                    Civil Defense Approved Piping
+                  </div>
                 </div>
 
                 <Link
@@ -208,7 +267,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 3: Gypsum Works */}
+      {/* SECTION 3: Gypsum Works with Real Drywall Image */}
       <section className="py-20 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -242,27 +301,30 @@ export default function ServicesPage() {
               </RevealOnScroll>
             </div>
 
-            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-              {[
-                { title: "Framing & Alignment", desc: "Lightweight steel studs, tracks, and laser-aligned suspended grids." },
-                { title: "Drywall Fastening", desc: "High-speed mechanical fastening and acoustic damping pads." },
-                { title: "Jointing & Sanding", desc: "Multi-coat joint compound, fiber mesh tape, and seamless smooth sanding." },
-                { title: "Architectural Trim", desc: "Shadowline reveals, cornices, and integrated air diffuser cutouts." }
-              ].map((g, idx) => (
-                <RevealOnScroll key={idx} direction="up" delay={idx * 0.06}>
-                  <div className="p-6 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1.5 cursor-pointer h-full">
-                    <p className="text-sm font-bold text-[#163b35]">{g.title}</p>
-                    <p className="text-xs text-[#5e6b66] mt-1 leading-relaxed">{g.desc}</p>
+            <div className="lg:col-span-6">
+              <RevealOnScroll direction="right">
+                <div className="relative h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group">
+                  <Image
+                    src="/media/Gemini_Generated_Image_3d4a4s3d4a4s3d4a.png"
+                    alt="Architectural 3D False Ceiling and Drywall Fit-out"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 550px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 left-5 right-5 text-white">
+                    <p className="text-xs font-bold text-[#d8f36a] uppercase">Precision Interior Engineering</p>
+                    <p className="text-sm font-semibold">Custom Acoustic Slats & Multi-Tier Decorative Ceilings</p>
                   </div>
-                </RevealOnScroll>
-              ))}
+                </div>
+              </RevealOnScroll>
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* SECTION 4: Painting & Plastering */}
+      {/* SECTION 4: Painting & Plastering with Screeding Image */}
       <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
@@ -303,23 +365,37 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 5: Cleaning & Telecom */}
+      {/* SECTION 5: Cleaning & Telecom with Media Images */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             
             <RevealOnScroll direction="left">
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between h-full">
-                <div>
+              <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
+                <div className="relative h-60 w-full overflow-hidden bg-[#163b35]/5">
+                  <Image
+                    src="/media/Gemini_Generated_Image_rftpr3rftpr3rftp.png"
+                    alt="Commercial Office Cleaning with Janitor Cart"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 550px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 rounded-full bg-white/95 text-[#163b35] text-[11px] font-bold shadow-xs">
+                      Corporate Janitorial
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-8">
                   <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 06 • Specialized Hygiene</span>
-                  <h3 className="text-2xl font-black text-[#163b35] mt-2 mb-4">
+                  <h3 className="text-2xl font-black text-[#163b35] mt-1 mb-3">
                     House & Offices Cleaning Services
                   </h3>
-                  <p className="text-sm text-[#5e6b66] leading-relaxed mb-6 font-normal">
-                    "When we dispense residential cleaning services, instead of giving a mere appearance of cleanliness, our services put 
-                    emphasis on making the environment truly clean and radiate an aura of positivity so that when you re-occupy the space, 
-                    you will be rejuvenated and filled with vivacity. Our promise extends beyond cleanliness; it is towards the quality of life."
+                  <p className="text-xs text-[#5e6b66] leading-relaxed mb-6 font-normal">
+                    "When we dispense residential and corporate cleaning, our services put emphasis on making the environment truly clean 
+                    and radiate an aura of positivity so that when you re-occupy the space, you will be rejuvenated and filled with vivacity."
                   </p>
                   
                   <div className="grid grid-cols-2 gap-3 text-xs text-[#17201d] mb-6 font-medium">
@@ -328,29 +404,43 @@ export default function ServicesPage() {
                     <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#163b35]" /> Facade glass wash</div>
                     <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#163b35]" /> Post-renovation cleanup</div>
                   </div>
-                </div>
 
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-[#163b35] hover:text-[#5e6b66] pt-4 border-t border-[#163b35]/8"
-                >
-                  <span>Book Cleaning Crew</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-[#163b35] hover:text-[#5e6b66] pt-4 border-t border-[#163b35]/8 w-full"
+                  >
+                    <span>Book Cleaning Crew</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll direction="right">
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between h-full">
-                <div>
+              <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
+                <div className="relative h-60 w-full overflow-hidden bg-[#163b35]/5">
+                  <Image
+                    src="/media/Gemini_Generated_Image_7qhkyl7qhkyl7qhk.png"
+                    alt="Satellite and Telecommunications Infrastructure"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 550px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 rounded-full bg-white/95 text-[#163b35] text-[11px] font-bold shadow-xs">
+                      VSAT & MSS
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-8">
                   <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 07 • Connectivity</span>
-                  <h3 className="text-2xl font-black text-[#163b35] mt-2 mb-4">
+                  <h3 className="text-2xl font-black text-[#163b35] mt-1 mb-3">
                     Telephone & Satellite Services
                   </h3>
-                  <p className="text-sm text-[#5e6b66] leading-relaxed mb-6 font-normal">
+                  <p className="text-xs text-[#5e6b66] leading-relaxed mb-6 font-normal">
                     "Yashin Facilities Management has been the telephone & satellite services partner for industrial and remote facilities. 
-                    Our superior network enables clear communications and uninterrupted coverage across two-thirds of the globe by MSS, 
-                    and quasi-global VSAT coverage."
+                    Our superior network enables clear communications across two-thirds of the globe by MSS, and quasi-global VSAT coverage."
                   </p>
 
                   <div className="grid grid-cols-2 gap-3 text-xs text-[#17201d] mb-6 font-medium">
@@ -359,15 +449,15 @@ export default function ServicesPage() {
                     <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#163b35]" /> Remote site handhelds</div>
                     <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#163b35]" /> Base station antennas</div>
                   </div>
-                </div>
 
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-[#163b35] hover:text-[#5e6b66] pt-4 border-t border-[#163b35]/8"
-                >
-                  <span>Inquire Satellite Setup</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-[#163b35] hover:text-[#5e6b66] pt-4 border-t border-[#163b35]/8 w-full"
+                  >
+                    <span>Inquire Satellite Setup</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
               </div>
             </RevealOnScroll>
 
