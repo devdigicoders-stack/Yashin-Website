@@ -87,7 +87,7 @@ export default function ProjectsPage() {
       <Navbar />
 
       {/* Header Banner with On-Site Engineering Infrastructure Background */}
-      <section className="relative py-24 sm:py-32 bg-[#0e2722] text-white overflow-hidden">
+      <section className="relative py-14 sm:py-18 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/media/Gemini_Generated_Image_2dwom2dwom2dwom2.png"
@@ -118,7 +118,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Main Project Portfolio Grid with Photographic Media */}
-      <section className="py-20 bg-white border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
@@ -192,7 +192,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Trust & Quality Assurance Section */}
-      <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Quality Assurance</span>

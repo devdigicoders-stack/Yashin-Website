@@ -28,7 +28,7 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* Header Banner with Media Backdrop */}
-      <section className="relative py-24 sm:py-32 bg-[#0e2722] text-white overflow-hidden">
+      <section className="relative py-14 sm:py-18 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/media/Gemini_Generated_Image_if39cgif39cgif39.png"
@@ -59,7 +59,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION 1: MEP Engineering */}
-      <section className="py-20 bg-white border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
@@ -181,7 +181,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION 2: Fire Safety & Protection Systems */}
-      <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
@@ -259,7 +259,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION 3: Civil, Ceilings & Facades */}
-      <section className="py-20 bg-white border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
@@ -353,7 +353,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION 4: Cleaning, Manpower & Telecom */}
-      <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">

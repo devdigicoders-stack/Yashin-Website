@@ -22,7 +22,7 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero Banner with Corporate Leadership & Skyline Background */}
-      <section className="relative py-24 sm:py-32 bg-[#0e2722] text-white overflow-hidden">
+      <section className="relative py-14 sm:py-18 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/media/Gemini_Generated_Image_28mi0w28mi0w28mi.png"
@@ -53,7 +53,7 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 1: About Us Narrative with Banner Image */}
-      <section className="py-20 bg-white border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           {/* Top Banner Image of Collaboration */}
@@ -146,7 +146,7 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 2: Foreword & Introduction with Media Images */}
-      <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             
@@ -232,7 +232,7 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 3: Objective, Values & Integrity with Media Images */}
-      <section className="py-20 bg-white border-b border-[#163b35]/8">
+      <section className="py-12 sm:py-16 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
@@ -326,7 +326,7 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 4: Our Vision & 5 Key Attributers */}
-      <section className="py-20 bg-[#163b35] text-white">
+      <section className="py-12 sm:py-16 bg-[#163b35] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">

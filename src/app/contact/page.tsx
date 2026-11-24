@@ -16,7 +16,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Banner with Modern Commercial Complex Headquarters Background */}
-      <section className="relative py-24 sm:py-32 bg-[#0e2722] text-white overflow-hidden">
+      <section className="relative py-14 sm:py-18 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png"
@@ -85,7 +85,7 @@ export default function ContactPage() {
       <ContactSection />
 
       {/* Direct Leadership & Key Contact Persons with Real Photos */}
-      <section className="py-20 bg-white border-t border-[#163b35]/10">
+      <section className="py-12 sm:py-16 bg-white border-t border-[#163b35]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="max-w-2xl mb-12">
             <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Executive Management</span>

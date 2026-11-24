@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800", "900"],
+  variable: "--font-heading",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Yashin Facilities Management & Services W.L.L. | Doha, Qatar",
@@ -13,22 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-            h1, h2, h3, .font-heading { font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.03em; }
-          `
-        }} />
-      </head>
-      <body className="min-h-screen bg-[#f7f8f5] text-[#17201d] antialiased selection:bg-[#d8f36a] selection:text-[#163b35]">
+    <html lang="en" className={`scroll-smooth ${plusJakarta.variable} ${outfit.variable}`}>
+      <body className="min-h-screen bg-[#f7f8f5] text-[#17201d] antialiased selection:bg-[#d8f36a] selection:text-[#163b35] font-sans">
         {children}
       </body>
     </html>

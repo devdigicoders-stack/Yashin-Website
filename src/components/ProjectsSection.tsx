@@ -53,7 +53,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 lg:py-28 bg-[#f7f8f5] border-t border-[#163b35]/8">
+    <section id="projects" className="py-12 sm:py-16 bg-[#f7f8f5] border-t border-[#163b35]/8">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Clevaro Header */}

@@ -8,7 +8,7 @@ import { ArrowRight, Award, Shield, Users, CheckCircle, Sparkles } from "lucide-
 
 export default function Hero() {
   return (
-    <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 bg-[#f7f8f5] overflow-hidden">
+    <section className="relative pt-10 pb-12 lg:pt-14 lg:pb-16 bg-[#f7f8f5] overflow-hidden">
       
       {/* Subtle background ambient light */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#d8f36a]/15 rounded-full blur-3xl pointer-events-none" />

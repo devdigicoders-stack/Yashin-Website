@@ -7,7 +7,7 @@ import { Shield, Target, Compass, Award } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 lg:py-28 bg-[#163b35] text-[#f7f8f5]">
+    <section id="about" className="py-12 sm:py-16 bg-[#163b35] text-[#f7f8f5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Clevaro Dark Section Header with Executive Partnership Visual from media */}
