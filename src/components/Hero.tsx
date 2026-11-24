@@ -86,8 +86,8 @@ export default function Hero() {
                   className="relative h-[430px] sm:h-[500px] rounded-3xl overflow-hidden border-2 border-[#163b35]/15 shadow-2xl group bg-white"
                 >
                   <Image
-                    src="/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png"
-                    alt="Yashin Facilities Qatar Modern Commercial Glass Facade & Towers"
+                    src="/media/about-banner.png"
+                    alt="Doha Qatar West Bay Commercial Towers & Modern Skyline at Night"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 550px"
@@ -95,7 +95,7 @@ export default function Hero() {
                   />
                   
                   {/* Clean deep solid gradient shield to ensure zero background text shows through */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e2722] via-[#163b35]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e2722] via-[#163b35]/25 to-transparent" />
                   
                   {/* Top Badge */}
                   <div className="absolute top-5 left-5">
@@ -117,23 +117,23 @@ export default function Hero() {
                   </div>
                 </motion.div>
 
-                {/* Secondary Inset Visual Card with high z-index and clean placement */}
+                {/* Secondary Inset Visual Card: Modern Architectural Engineering Glass Facade */}
                 <motion.div 
                   whileHover={{ rotate: -2, scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   className="absolute -bottom-6 -left-6 sm:-bottom-8 sm:-left-8 w-40 sm:w-48 h-40 sm:h-48 rounded-3xl overflow-hidden border-4 border-white shadow-2xl hidden sm:block bg-white cursor-pointer group z-10"
                 >
                   <Image
-                    src="/media/about-banner.png"
-                    alt="Doha Qatar Skyline Night"
+                    src="/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png"
+                    alt="Modern Commercial Architecture & Facades"
                     fill
                     sizes="200px"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/75 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 to-transparent" />
                   <div className="absolute bottom-2.5 left-2 right-2 text-center">
                     <span className="px-2 py-0.5 rounded-full bg-[#163b35]/90 text-[#d8f36a] text-[9px] font-black uppercase tracking-wider">
-                      Doha, Qatar
+                      Commercial Towers
                     </span>
                   </div>
                 </motion.div>
