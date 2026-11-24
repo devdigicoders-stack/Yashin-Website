@@ -21,17 +21,17 @@ export default function AboutPage() {
     <main className="min-h-screen flex flex-col bg-[#f7f8f5]">
       <Navbar />
 
-      {/* Hero Banner with Doha Skyline Background */}
+      {/* Hero Banner with Corporate Leadership & Skyline Background */}
       <section className="relative py-24 sm:py-32 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/media/about-banner.png"
-            alt="Doha Skyline at Night"
+            src="/media/Gemini_Generated_Image_28mi0w28mi0w28mi.png"
+            alt="Corporate Partnership & Engineering Qatar"
             fill
             priority
-            className="object-cover opacity-60"
+            className="object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#163b35]/90 via-[#163b35]/65 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#163b35]/95 via-[#163b35]/70 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
