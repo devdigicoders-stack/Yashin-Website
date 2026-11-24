@@ -86,16 +86,16 @@ export default function Hero() {
                   className="relative h-[430px] sm:h-[500px] rounded-3xl overflow-hidden border-2 border-[#163b35]/15 shadow-2xl group bg-white"
                 >
                   <Image
-                    src="/media/Gemini_Generated_Image_if39cgif39cgif39.png"
-                    alt="Yashin Facilities Qatar Engineering Skyline & Commercial Towers"
+                    src="/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png"
+                    alt="Yashin Facilities Qatar Modern Commercial Glass Facade & Towers"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 550px"
                     className="object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                   />
                   
-                  {/* Subtle clean contrast gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/85 via-[#163b35]/20 to-transparent" />
+                  {/* Clean deep solid gradient shield to ensure zero background text shows through */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e2722] via-[#163b35]/40 to-transparent" />
                   
                   {/* Top Badge */}
                   <div className="absolute top-5 left-5">
