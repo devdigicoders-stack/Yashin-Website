@@ -27,12 +27,12 @@ export default function ServicesPage() {
     <main className="min-h-screen flex flex-col bg-[#f7f8f5]">
       <Navbar />
 
-      {/* Header Banner */}
+      {/* Header Banner with Page 12 Services Trade Matrix Collage */}
       <section className="relative py-24 sm:py-32 bg-[#163b35] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/media/about-banner.png"
-            alt="Doha Skyline Services"
+            src="/media/services-trade-matrix.png"
+            alt="Page 12 Brochure - All 16 Services Trade Matrix"
             fill
             priority
             className="object-cover"
@@ -42,7 +42,7 @@ export default function ServicesPage() {
           <RevealOnScroll direction="up">
             <div className="max-w-3xl">
               <span className="px-3.5 py-1.5 rounded-full bg-[#ddede7]/20 text-[#d8f36a] text-xs font-semibold uppercase tracking-wider mb-4 inline-block">
-                Qatar Contracting & Facilities Portfolio
+                Qatar Contracting & Facilities Portfolio (Page 12)
               </span>
               <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6">
                 Complete Services & Trade Capabilities
@@ -56,14 +56,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 1: MEP Engineering */}
+      {/* SECTION 1: MEP Engineering (Brochure Page 13) */}
       <section className="py-20 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
             <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
               <div className="max-w-2xl">
-                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 01 • MEP Systems</span>
+                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 01 • MEP Systems (Page 13)</span>
                 <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2">
                   Electrical, Plumbing & Central Cooling
                 </h2>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ddede7] text-[#163b35] text-xs font-bold shrink-0">
                 <CheckCircle2 className="w-4 h-4" />
-                <span>Registered Plumbers & Electricians</span>
+                <span>Page 13 Registered Plumbers & Electricians</span>
               </div>
             </div>
           </RevealOnScroll>
@@ -86,15 +86,18 @@ export default function ServicesPage() {
                 <div>
                   <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
                     <Image
-                      src="/media/Gemini_Generated_Image_sqgdbqsqgdbqsqgd.png"
-                      alt="Residential & Commercial Electrification"
+                      src="/media/panelboard-wiring.png"
+                      alt="Page 13 - Residential & Commercial Electrification Panel Board"
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                       <span className="px-3 py-1 rounded-full bg-white/90 text-[#163b35] text-[11px] font-bold shadow-xs">
                         Power & Substations
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full bg-[#163b35]/90 text-white text-[10px] font-semibold">
+                        Page 13
                       </span>
                     </div>
                   </div>
@@ -123,15 +126,18 @@ export default function ServicesPage() {
                 <div>
                   <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
                     <Image
-                      src="/media/Gemini_Generated_Image_l3ebsjl3ebsjl3eb.png"
-                      alt="Domestic & Industrial Plumbing"
+                      src="/media/plumbing-under-sink.png"
+                      alt="Page 13 - Domestic & Industrial Plumbing Under-Sink Fixtures"
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                       <span className="px-3 py-1 rounded-full bg-white/90 text-[#163b35] text-[11px] font-bold shadow-xs">
                         Hydraulic Systems
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full bg-[#163b35]/90 text-white text-[10px] font-semibold">
+                        Page 13
                       </span>
                     </div>
                   </div>
@@ -160,15 +166,18 @@ export default function ServicesPage() {
                 <div>
                   <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
                     <Image
-                      src="/media/Gemini_Generated_Image_gqtf8sgqtf8sgqtf.png"
-                      alt="Chilled Water & HVAC Manifolds"
+                      src="/media/pipe-wrench-mep.png"
+                      alt="Page 15 - MEP Constructions & Pipe Wrench Overhaul"
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                       <span className="px-3 py-1 rounded-full bg-white/90 text-[#163b35] text-[11px] font-bold shadow-xs">
-                        Central Cooling
+                        Central Maintenance
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full bg-[#163b35]/90 text-white text-[10px] font-semibold">
+                        Page 15
                       </span>
                     </div>
                   </div>
@@ -200,14 +209,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 2: Fire Safety with Real Sprinkler Image */}
+      {/* SECTION 2: Fire Safety with Page 14 Beacon and Page 18 Riser */}
       <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5">
               <RevealOnScroll direction="left">
-                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 02 • Life Safety</span>
+                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 02 • Life Safety (Page 14)</span>
                 <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2 mb-4">
                   Fire Alarm and Firefighting Systems
                 </h2>
@@ -218,17 +227,17 @@ export default function ServicesPage() {
                   and maintenance.
                 </p>
 
-                {/* Fire Visual Thumbnail */}
-                <div className="relative h-48 rounded-2xl overflow-hidden border border-[#163b35]/10 mb-6 shadow-sm">
+                {/* Fire Visual Thumbnail from Page 14 */}
+                <div className="relative h-48 rounded-2xl overflow-hidden border border-[#163b35]/10 mb-6 shadow-sm bg-black">
                   <Image
-                    src="/media/Gemini_Generated_Image_w7l72cw7l72cw7l7.png"
-                    alt="Fire sprinkler loop and red hydrant valves"
+                    src="/media/fire-strobe-beacon.png"
+                    alt="Page 14 - Fire Alarm Strobe Emergency Beacon"
                     fill
                     sizes="450px"
                     className="object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-[#163b35]/90 text-white text-[11px] font-bold px-3 py-1 rounded-full">
-                    Civil Defense Approved Piping
+                    Civil Defense Strobe & Hydrant Standards (Page 14)
                   </div>
                 </div>
 
@@ -267,14 +276,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 3: Gypsum Works with Real Drywall Image */}
+      {/* SECTION 3: Gypsum Works with Page 9 Spiral Ceiling & Insets */}
       <section className="py-20 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-6">
               <RevealOnScroll direction="left">
-                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 03 • Architectural Ceilings</span>
+                <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 03 • Architectural Ceilings (Page 9)</span>
                 <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2 mb-4">
                   Gypsum Works & Interior Drywall
                 </h2>
@@ -303,18 +312,18 @@ export default function ServicesPage() {
 
             <div className="lg:col-span-6">
               <RevealOnScroll direction="right">
-                <div className="relative h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group">
+                <div className="relative h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-white">
                   <Image
-                    src="/media/Gemini_Generated_Image_3d4a4s3d4a4s3d4a.png"
-                    alt="Architectural 3D False Ceiling and Drywall Fit-out"
+                    src="/media/gypsum-spiral-ceiling.png"
+                    alt="Brochure Page 9 - Architectural Multi-Tier Gypsum Ceiling"
                     fill
                     sizes="(max-width: 1024px) 100vw, 550px"
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5 text-white">
-                    <p className="text-xs font-bold text-[#d8f36a] uppercase">Precision Interior Engineering</p>
-                    <p className="text-sm font-semibold">Custom Acoustic Slats & Multi-Tier Decorative Ceilings</p>
+                    <p className="text-xs font-bold text-[#d8f36a] uppercase">Brochure Page 9 Design</p>
+                    <p className="text-sm font-semibold">Custom 3D Crescent & Spiral False Ceilings with Ambient LED</p>
                   </div>
                 </div>
               </RevealOnScroll>
@@ -324,13 +333,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Painting & Plastering with Screeding Image */}
+      {/* SECTION 4: Painting & Plastering with Page 10 Painter Photo */}
       <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           <RevealOnScroll direction="up">
             <div className="max-w-3xl mb-12">
-              <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 04 • Surface Engineering</span>
+              <span className="text-xs font-bold text-[#5e6b66] uppercase tracking-wider">Division 04 • Surface Engineering (Page 10)</span>
               <h2 className="text-3xl sm:text-4xl font-black text-[#163b35] mt-2 mb-3">
                 Painting, Plastering, Floors & Screeding
               </h2>
@@ -365,7 +374,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 5: Cleaning & Telecom with Media Images */}
+      {/* SECTION 5: Cleaning & Telecom with Page 7 Authentic Photos */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
@@ -375,15 +384,15 @@ export default function ServicesPage() {
               <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
                 <div className="relative h-60 w-full overflow-hidden bg-[#163b35]/5">
                   <Image
-                    src="/media/Gemini_Generated_Image_rftpr3rftpr3rftp.png"
-                    alt="Commercial Office Cleaning with Janitor Cart"
+                    src="/media/clean-custodian-mop.png"
+                    alt="Page 7 - Custodian Mopping Office Hallway"
                     fill
                     sizes="(max-width: 1024px) 100vw, 550px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-white/95 text-[#163b35] text-[11px] font-bold shadow-xs">
-                      Corporate Janitorial
+                      Brochure Page 7 • Hygiene
                     </span>
                   </div>
                 </div>
@@ -420,15 +429,15 @@ export default function ServicesPage() {
               <div className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full">
                 <div className="relative h-60 w-full overflow-hidden bg-[#163b35]/5">
                   <Image
-                    src="/media/Gemini_Generated_Image_7qhkyl7qhkyl7qhk.png"
-                    alt="Satellite and Telecommunications Infrastructure"
+                    src="/media/satellite-orbit.png"
+                    alt="Page 7 - Orbital Satellite and Telecommunications Network"
                     fill
                     sizes="(max-width: 1024px) 100vw, 550px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-white/95 text-[#163b35] text-[11px] font-bold shadow-xs">
-                      VSAT & MSS
+                      Brochure Page 7 • Satellite
                     </span>
                   </div>
                 </div>
@@ -466,9 +475,17 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Bottom */}
-      <section className="py-20 bg-[#163b35] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-2xl">
+      {/* CTA Bottom with Page 19 Back Cover Skyline */}
+      <section className="relative py-20 bg-[#163b35] text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/media/backcover-skyline.png"
+            alt="Page 19 Backcover Skyline"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-2xl z-10">
           <RevealOnScroll direction="up">
             <h2 className="text-3xl sm:text-5xl font-black text-white mb-4">Ready to Contract in Qatar?</h2>
             <p className="text-sm sm:text-base text-[#ddede7]/80 mb-8 font-normal leading-relaxed">

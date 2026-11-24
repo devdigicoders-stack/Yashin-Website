@@ -20,7 +20,8 @@ const services = [
     category: "mep",
     title: "Electro-Mechanical & Substation Works",
     tag: "Commercial & Industrial",
-    image: "/media/Gemini_Generated_Image_sqgdbqsqgdbqsqgd.png",
+    image: "/media/panelboard-wiring.png", // Page 13 real panelboard wiring photo
+    source: "Brochure Page 13",
     description: "Design, installation, and commissioning of electrical equipment substations, high-voltage panel boards, stadium electrification, and wiring.",
     highlights: ["Panel boards installation", "Electrification pathways", "Cable fault checking", "Utility line maintenance"]
   },
@@ -28,23 +29,26 @@ const services = [
     category: "mep",
     title: "Commercial & Industrial Plumbing",
     tag: "Registered Plumbers",
-    image: "/media/Gemini_Generated_Image_l3ebsjl3ebsjl3eb.png",
+    image: "/media/plumbing-under-sink.png", // Page 13 real plumbing photo
+    source: "Brochure Page 13",
     description: "Domestic, commercial, and industrial plumbing solutions including geyser setups, leak detection, drainage networks, and water-saving systems.",
     highlights: ["Geyser & fixture installation", "Pipe leakage troubleshooting", "Industrial water manifolds", "Drainage repairs"]
   },
   {
     category: "mep",
-    title: "HVAC Chilled Water & Air Ducts",
-    tag: "Cooling & Air Quality",
-    image: "/media/Gemini_Generated_Image_d7sj57d7sj57d7sj.png",
-    description: "Complete central cooling infrastructure, industrial duct fabrication, airflow balance testing, and precision chiller maintenance.",
-    highlights: ["Duct fabrication & hanging", "Chilled water manifolds", "Airflow balance testing", "Filter replacement & sanitizing"]
+    title: "Chiller Lines & Industrial Booster Pumps",
+    tag: "Cooling & Hydraulics",
+    image: "/media/site-booster-pump.png", // Page 17 on-site heavy booster pump photo
+    source: "Brochure Page 17",
+    description: "Complete central cooling infrastructure, industrial high-pressure pumps, acoustic thermal pipe insulation, and manifold piping.",
+    highlights: ["Heavy booster pumps", "Chilled water manifolds", "Airflow balance testing", "Filter replacement & sanitizing"]
   },
   {
     category: "fire",
     title: "Fire Alarm & Firefighting Systems",
     tag: "Life Safety & Defense",
-    image: "/media/Gemini_Generated_Image_w7l72cw7l72cw7l7.png",
+    image: "/media/site-fire-riser.png", // Page 18 on-site red firefighting riser
+    source: "Brochure Page 18",
     description: "Complete building safety: fire sprinkler systems, fire hydrants, optical smoke detection, extinguisher installations, and statutory AMC maintenance.",
     highlights: ["Sprinkler system loops", "Fire hydrant installations", "Smoke detection alarms", "Annual maintenance contracts (AMC)"]
   },
@@ -52,7 +56,8 @@ const services = [
     category: "civil",
     title: "Architectural Gypsum & False Ceilings",
     tag: "Interior Fit-outs",
-    image: "/media/Gemini_Generated_Image_3d4a4s3d4a4s3d4a.png",
+    image: "/media/gypsum-spiral-ceiling.png", // Page 9 real 3D false ceiling photo
+    source: "Brochure Page 9",
     description: "Precision fitting and fastening of wallboards, sheetrock into specified positions, acoustic panels, and decorative 3D multi-level ceilings.",
     highlights: ["Framing, drywall & trim", "Curved & stepped ceiling designs", "Acoustic drywall boards", "Tape jointing & smooth finish"]
   },
@@ -60,7 +65,8 @@ const services = [
     category: "civil",
     title: "Painting, Floor Screeding & Waterproofing",
     tag: "Protective Coatings",
-    image: "/media/Gemini_Generated_Image_dnvqz2dnvqz2dnvq.png",
+    image: "/media/painter-blue-helmet.png", // Page 10 real painter photo
+    source: "Brochure Page 10",
     description: "Floor painting, anti-slip floor coatings, line markings, concrete floor repairs, waterproofing membrane for walls and roofs, and plastering.",
     highlights: ["Industrial epoxy floor coatings", "Membrane roof waterproofing", "Interior & exterior emulsion", "Road and floor line markings"]
   },
@@ -68,7 +74,8 @@ const services = [
     category: "civil",
     title: "Glass Glazing & ACP Cladding Facades",
     tag: "Exterior Contracting",
-    image: "/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png",
+    image: "/media/acp-glass-commercial-building.png", // Page 11 actual commercial building
+    source: "Brochure Page 11",
     description: "Modern commercial building envelopes using high-grade Aluminium Composite Panels (ACP), curtain wall glass glazing, and structural steel fabrication.",
     highlights: ["ACP composite facade cladding", "Reflective curtain wall glazing", "Aluminium windows & doors", "Custom steel framework"]
   },
@@ -76,7 +83,8 @@ const services = [
     category: "cleaning",
     title: "House & Commercial Office Cleaning",
     tag: "Hygiene & Sanitization",
-    image: "/media/Gemini_Generated_Image_rftpr3rftpr3rftp.png",
+    image: "/media/clean-custodian-mop.png", // Page 7 cleaning custodian
+    source: "Brochure Page 7",
     description: "Deep office and residential cleaning that radiates an aura of positivity, rejuvenation, and pristine cleanliness for corporate and private clients.",
     highlights: ["Corporate office cleaning", "Post-construction debris cleanup", "Residential deep sanitization", "Eco-friendly cleaning agents"]
   },
@@ -84,7 +92,8 @@ const services = [
     category: "cleaning",
     title: "Skilled & Unskilled Manpower Supply",
     tag: "Certified Workforce",
-    image: "/media/Gemini_Generated_Image_1r8fmb1r8fmb1r8f.png",
+    image: "/media/site-safety-toolbox-1.png", // Page 11 actual site safety toolbox briefing
+    source: "Brochure Page 11",
     description: "Immediate deployment of safety-trained trade professionals: certified electricians, plumbers, masons, carpenters, welders, painters, and helpers.",
     highlights: ["Certified trade technicians", "Trained in safety protocols", "Short & long-term contracts", "Full compliance with Qatar law"]
   },
@@ -92,7 +101,8 @@ const services = [
     category: "mep",
     title: "Telecommunication & Satellite Infrastructure",
     tag: "VSAT & Radio Coverage",
-    image: "/media/Gemini_Generated_Image_7qhkyl7qhkyl7qhk.png",
+    image: "/media/satellite-orbit.png", // Page 7 satellite orbit photo
+    source: "Brochure Page 7",
     description: "Uninterrupted telephone and satellite communications across remote sites and corporate offices by MSS and quasi-global VSAT coverage.",
     highlights: ["Two-thirds globe MSS coverage", "Quasi-global VSAT coverage", "Emergency satellite phones", "On-site antenna setups"]
   }
@@ -141,10 +151,10 @@ export default function ServicesSection() {
           </div>
         </RevealOnScroll>
 
-        {/* Service Cards with High-Res Media Images */}
+        {/* Service Cards with Authentic Brochure Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <AnimatePresence>
-            {filtered.map((item, idx) => (
+            {filtered.map((item) => (
               <motion.div
                 layout
                 initial={{ opacity: 0, scale: 0.96 }}
@@ -155,7 +165,7 @@ export default function ServicesSection() {
                 className="rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 hover:border-[#163b35]/20 hover:bg-[#ffffff] hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group"
               >
                 <div>
-                  {/* Service Visual Thumbnail */}
+                  {/* Service Visual Thumbnail with Brochure Source */}
                   <div className="relative h-48 w-full overflow-hidden bg-[#ddede7]">
                     <Image
                       src={item.image}
@@ -164,9 +174,12 @@ export default function ServicesSection() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[#163b35] text-[11px] font-bold shadow-xs">
+                    <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
+                      <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-xs text-[#163b35] text-[11px] font-bold shadow-xs">
                         {item.tag}
+                      </span>
+                      <span className="px-2.5 py-0.5 rounded-full bg-[#163b35]/90 text-white text-[10px] font-semibold backdrop-blur-xs">
+                        {item.source}
                       </span>
                     </div>
                   </div>

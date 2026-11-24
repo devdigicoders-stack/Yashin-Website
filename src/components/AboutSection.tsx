@@ -10,7 +10,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 lg:py-28 bg-[#163b35] text-[#f7f8f5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
-        {/* Clevaro Dark Section Header with Visual Feature */}
+        {/* Clevaro Dark Section Header with Page 2 Handshake Banner */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
           <div className="lg:col-span-7">
             <RevealOnScroll direction="up">
@@ -23,7 +23,7 @@ export default function AboutSection() {
                   You Enjoy Life.
                 </h2>
                 <p className="text-base sm:text-lg text-[#ddede7]/80 leading-relaxed font-normal mb-6">
-                  Yashin Facilities Management and Services W.L.L. was established in 2014 in Doha, Qatar. 
+                  Yashin Facilities Management and Services W.L.L. was founded and established in 2014 in Doha, Qatar. 
                   Focused on providing full-time, world-class, and professional services across medium 
                   and large private and commercial facilities, hotels, and condominiums.
                 </p>
@@ -49,10 +49,10 @@ export default function AboutSection() {
 
           <div className="lg:col-span-5">
             <RevealOnScroll direction="right" delay={0.15}>
-              <div className="relative h-[320px] sm:h-[380px] rounded-3xl overflow-hidden border border-[#ddede7]/15 shadow-2xl group">
+              <div className="relative h-[320px] sm:h-[380px] rounded-3xl overflow-hidden border border-[#ddede7]/15 shadow-2xl group bg-[#0d2723]">
                 <Image
-                  src="/media/about-us-banner.png"
-                  alt="Corporate Business Collaboration and Executive Partnership"
+                  src="/media/handshake-banner.png"
+                  alt="Brochure Page 2 - Corporate Welcome Handshake"
                   fill
                   sizes="(max-width: 1024px) 100vw, 450px"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -67,26 +67,38 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* 3 Clevaro Dark Cards with Lime Icons */}
+        {/* 3 Clevaro Dark Cards with Page 5 Brochure Visuals */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16" id="values">
           
           <RevealOnScroll direction="up" delay={0.1}>
             <motion.div 
               whileHover={{ y: -6 }}
-              className="p-8 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 flex flex-col justify-between h-full group transition-all duration-300"
+              className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 flex flex-col justify-between h-full group transition-all duration-300 overflow-hidden"
             >
-              <div>
-                <div className="w-12 h-12 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black mb-6 group-hover:scale-110 transition-transform">
-                  <Target className="w-6 h-6" />
+              <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
+                <Image
+                  src="/media/objective-tablet.png"
+                  alt="Page 5 Brochure - Objective Water Splash Tablet"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black shadow-md">
+                    <Target className="w-5 h-5" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Our Objective</h3>
-                <p className="text-sm text-[#ddede7]/70 leading-relaxed">
+              </div>
+
+              <div className="p-7">
+                <h3 className="text-xl font-bold text-white mb-2">Our Objective</h3>
+                <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
                   Striving to achieve excellence in facility and MEP services across Doha, Qatar through 
                   creativity, responsiveness, and uncompromising quality standards.
                 </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-[#ddede7]/10 text-xs text-[#d8f36a] font-semibold">
-                Excellence in Execution
+                <div className="pt-3 border-t border-[#ddede7]/10 text-xs text-[#d8f36a] font-semibold">
+                  Excellence in Execution
+                </div>
               </div>
             </motion.div>
           </RevealOnScroll>
@@ -94,20 +106,32 @@ export default function AboutSection() {
           <RevealOnScroll direction="up" delay={0.2}>
             <motion.div 
               whileHover={{ y: -6 }}
-              className="p-8 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 flex flex-col justify-between h-full group transition-all duration-300"
+              className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 flex flex-col justify-between h-full group transition-all duration-300 overflow-hidden"
             >
-              <div>
-                <div className="w-12 h-12 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black mb-6 group-hover:scale-110 transition-transform">
-                  <Compass className="w-6 h-6" />
+              <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
+                <Image
+                  src="/media/eco-sustainability.png"
+                  alt="Page 5 Brochure - Value Eco Sustainability"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black shadow-md">
+                    <Compass className="w-5 h-5" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Corporate Values</h3>
-                <p className="text-sm text-[#ddede7]/70 leading-relaxed">
+              </div>
+
+              <div className="p-7">
+                <h3 className="text-xl font-bold text-white mb-2">Corporate Values</h3>
+                <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
                   Embracing modern engineering approaches and flexible teamwork that guide day-to-day 
                   decisions and provide a common language to communicate through performance.
                 </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-[#ddede7]/10 text-xs text-[#d8f36a] font-semibold">
-                Adaptive Innovation
+                <div className="pt-3 border-t border-[#ddede7]/10 text-xs text-[#d8f36a] font-semibold">
+                  Adaptive Innovation
+                </div>
               </div>
             </motion.div>
           </RevealOnScroll>
@@ -115,27 +139,39 @@ export default function AboutSection() {
           <RevealOnScroll direction="up" delay={0.3}>
             <motion.div 
               whileHover={{ y: -6 }}
-              className="p-8 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 flex flex-col justify-between h-full group transition-all duration-300"
+              className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 flex flex-col justify-between h-full group transition-all duration-300 overflow-hidden"
             >
-              <div>
-                <div className="w-12 h-12 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black mb-6 group-hover:scale-110 transition-transform">
-                  <Shield className="w-6 h-6" />
+              <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
+                <Image
+                  src="/media/integrity-pledge.png"
+                  alt="Page 5 Brochure - Integrity Pledge"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black shadow-md">
+                    <Shield className="w-5 h-5" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Integrity First</h3>
-                <p className="text-sm text-[#ddede7]/70 leading-relaxed">
+              </div>
+
+              <div className="p-7">
+                <h3 className="text-xl font-bold text-white mb-2">Integrity First</h3>
+                <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
                   Reaching the right decisions faster with absolute transparency in actions and motives. 
                   Living by "Walk the talk" and fostering true comradeship & brotherhood.
                 </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-[#ddede7]/10 text-xs text-[#d8f36a] font-semibold">
-                Trust & Transparency
+                <div className="pt-3 border-t border-[#ddede7]/10 text-xs text-[#d8f36a] font-semibold">
+                  Trust & Transparency
+                </div>
               </div>
             </motion.div>
           </RevealOnScroll>
 
         </div>
 
-        {/* Leadership Spotlight with Real Portraits from media */}
+        {/* Leadership Spotlight with Page 2 Exact Portraits */}
         <RevealOnScroll direction="up" delay={0.35}>
           <div className="p-8 sm:p-10 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10">
             <div className="max-w-2xl mb-8">
@@ -146,10 +182,10 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
               <div className="flex items-center gap-5 p-5 rounded-2xl bg-[#163b35] border border-[#ddede7]/10">
-                <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-[#ddede7]/20 shadow-md">
+                <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-[#ddede7]/20 shadow-md bg-white">
                   <Image
-                    src="/media/aboutus.png"
-                    alt="Md. Somun Abdul - Managing Director"
+                    src="/media/md-somun-abdul.png"
+                    alt="Md. Somun Abdul - Managing Director (Page 2)"
                     fill
                     sizes="80px"
                     className="object-cover"
@@ -163,10 +199,10 @@ export default function AboutSection() {
               </div>
 
               <div className="flex items-center gap-5 p-5 rounded-2xl bg-[#163b35] border border-[#ddede7]/10">
-                <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-[#ddede7]/20 shadow-md">
+                <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-[#ddede7]/20 shadow-md bg-white">
                   <Image
-                    src="/media/aboutus (2).png"
-                    alt="Omar Faruk - Operational Supervisor"
+                    src="/media/omar-faruk.png"
+                    alt="Omar Faruk - Operational Supervisor (Page 2)"
                     fill
                     sizes="80px"
                     className="object-cover"

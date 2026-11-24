@@ -20,99 +20,99 @@ export default function ProjectsPage() {
   const photoProjects = [
     {
       title: "Commercial Building Facade & ACP Cladding",
-      source: "Doha Commercial Tower",
+      source: "Brochure Page 11",
       category: "Architectural & Civil",
-      image: "/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png",
+      image: "/media/acp-glass-commercial-building.png",
       scope: "Glass Glazing / A.C.P Cladding / Aluminium / Steel Fabrication",
       description: "Installation of multi-story curtain glass glazing, blue-tinted exterior facade, ACP panelling, and site personnel safety management."
     },
     {
       title: "High-Pressure Chiller Pump Room & Manifold Piping",
-      source: "Central Utility Plant",
+      source: "Brochure Page 17",
       category: "Heavy MEP Engineering",
-      image: "/media/Gemini_Generated_Image_2dwom2dwom2dwom2.png",
+      image: "/media/site-booster-pump.png",
       scope: "Industrial Booster Pumps, Check Valves & Flanged Connections",
       description: "High-pressure industrial water circulation pump stations, motor mounts, vibration isolators, and heavy gauge mechanical piping."
     },
     {
       title: "Underground Infrastructure Utility Trenching",
-      source: "Qatar Utility Corridor",
+      source: "Brochure Page 17",
       category: "Civil Infrastructure",
-      image: "/media/Gemini_Generated_Image_5p8z7i5p8z7i5p8z.png",
+      image: "/media/site-underground-trench.png",
       scope: "Deep Trenching, Pipe Jointing & Night-time Shift Operations",
       description: "Continuous utility line excavation, conduit laying, block support chambers, and backfilling for Qatar infrastructure."
     },
     {
       title: "Insulated Chiller Pipe Networks & Acoustic Jacketing",
-      source: "Commercial HVAC Substation",
+      source: "Brochure Page 18",
       category: "HVAC & Thermal Systems",
-      image: "/media/Gemini_Generated_Image_gqtf8sgqtf8sgqtf.png",
+      image: "/media/site-chiller-manifold.png",
       scope: "Thermal Insulation, Vapor Barriers & Dual Pump Runs",
       description: "High-performance silver foil thermal jacketing over central air-conditioning chilled water supply and return loops."
     },
     {
       title: "Primary Fire Hydrant & Life Safety Pump Station",
-      source: "Logistics & Warehousing Park",
+      source: "Brochure Page 18",
       category: "Firefighting Protection",
-      image: "/media/Gemini_Generated_Image_w7l72cw7l72cw7l7.png",
+      image: "/media/site-fire-riser.png",
       scope: "Red Fire Hydrant Loops, Y-Strainers & Pressure Relief Valves",
       description: "Dedicated high-volume firefighting riser manifold installation ensuring immediate fire suppression readiness."
     },
     {
       title: "Architectural 3D Stepped Gypsum Ceiling",
-      source: "Executive Corporate Headquarters",
+      source: "Brochure Page 9",
       category: "Interior Fit-out",
-      image: "/media/Gemini_Generated_Image_3d4a4s3d4a4s3d4a.png",
+      image: "/media/gypsum-spiral-ceiling.png",
       scope: "Geometric Curve Modeling & Concealed LED Channels",
-      description: "Multi-layered suspended false ceiling with acoustic wooden slats created using precision drywall fastening and seamless taping."
+      description: "Multi-layered crescent and spiral suspended false ceiling created using precision drywall fastening and seamless taping."
     },
     {
       title: "Industrial Floor Screeding, Painting & Waterproofing",
-      source: "Commercial Distribution Center",
+      source: "Brochure Page 10",
       category: "Surface Finishing",
-      image: "/media/Gemini_Generated_Image_mr1bkwmr1bkwmr1b.png",
+      image: "/media/concrete-floor-screeding.png",
       scope: "Anti-slip Coatings, Leveling Screeds & Roof Waterproofing",
-      description: "Concrete floor preparation, self-leveling screed application, line markings, and protective membrane waterproofing."
+      description: "Concrete floor preparation, self-leveling screed application, line markings, and membrane waterproofing."
     },
     {
       title: "Site Manpower & Safety Briefing Deployment",
-      source: "Active Qatar Construction Sites",
+      source: "Brochure Page 11",
       category: "Manpower Logistics",
-      image: "/media/Gemini_Generated_Image_1r8fmb1r8fmb1r8f.png",
+      image: "/media/site-safety-toolbox-1.png",
       scope: "Safety Helmets, High-Vis Vests & Certified Supervision",
       description: "Daily toolbox meetings, PPE enforcement, and coordinated deployment of skilled trade teams across active Qatar job sites."
     },
     {
-      title: "Electrical Substation Breaker & Panelboard Wiring",
-      source: "Industrial Power Complex",
-      category: "Electrical Engineering",
-      image: "/media/Gemini_Generated_Image_sqgdbqsqgdbqsqgd.png",
-      scope: "3-Phase Distribution, Busbar Assembly & Circuit Calibration",
-      description: "High-voltage main distribution board assembly, cable termination, and precision testing for commercial load stabilization."
+      title: "Overhead MEP Ductwork & Pipe Fitting Crews",
+      source: "Brochure Page 11",
+      category: "MEP Installation",
+      image: "/media/overhead-mep-crew.png",
+      scope: "Scaffolding Operations, Cable Trays & Air Conditioning Ducts",
+      description: "Installation of ceiling cable trays, suspended ductwork, and electrical pathways across commercial building floors."
     },
     {
-      title: "Commercial Air Ductwork Fabrication & Hanging",
-      source: "Shopping Mall & Office Plaza",
-      category: "HVAC Engineering",
-      image: "/media/Gemini_Generated_Image_d7sj57d7sj57d7sj.png",
-      scope: "Galvanized Sheet Ducts, Flanges & Diffuser Installation",
-      description: "Overhead duct route alignment, acoustic lining, and air distribution grid installation to optimize thermal comfort."
+      title: "External Pipe Bends & Trench Backfilling",
+      source: "Brochure Page 17",
+      category: "Infrastructure",
+      image: "/media/site-pipe-bends.png",
+      scope: "High-grade HDPE Pipe Bends, Concrete Anchor Blocks & Pressure Testing",
+      description: "Heavy underground piping curves, flange couplings, and infrastructure trenching execution."
     },
     {
-      title: "Commercial Office Sanitization & Custodial Care",
-      source: "Corporate Towers, West Bay",
-      category: "Facility Hygiene",
-      image: "/media/Gemini_Generated_Image_rftpr3rftpr3rftp.png",
-      scope: "Deep Floor Scrubbing, Workstation Disinfection & Waste Sorting",
-      description: "Full-time janitorial service providing sterile and pristine office environments using eco-certified materials."
+      title: "Central Chiller Room Mechanical Plant",
+      source: "Brochure Page 18",
+      category: "Heavy HVAC Plant",
+      image: "/media/site-chiller-room.png",
+      scope: "Chiller Plant Compressors, Dual Headers & Vibration Isolation",
+      description: "Central refrigeration plant installation with complete thermal jacketing and automated pressure monitoring."
     },
     {
-      title: "Telecommunications & Remote Satellite Network",
-      source: "Remote Site Stations",
-      category: "Communications",
-      image: "/media/Gemini_Generated_Image_7qhkyl7qhkyl7qhk.png",
-      scope: "VSAT Dish Alignment, Server Racks & MSS Transceivers",
-      description: "Reliable quasi-global telecommunication infrastructure bridging remote desert sites and central Doha headquarters."
+      title: "Heavy Red Manifold & Firefighter Gate Valves",
+      source: "Brochure Page 17",
+      category: "Fire Protection",
+      image: "/media/site-red-manifold.png",
+      scope: "Double Check Valves, Pressure Regulators & Gate Valves",
+      description: "Dedicated high-volume firefighting pipeline manifold installation with manual test connections."
     }
   ];
 
@@ -120,12 +120,12 @@ export default function ProjectsPage() {
     <main className="min-h-screen flex flex-col bg-[#f7f8f5]">
       <Navbar />
 
-      {/* Header Banner */}
+      {/* Header Banner with Page 1 Authentic Cover Skyline */}
       <section className="relative py-24 sm:py-32 bg-[#163b35] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-25">
           <Image
-            src="/media/about-banner.png"
-            alt="Doha Skyline Projects"
+            src="/media/qatar-skyline-hero.png"
+            alt="Page 1 Brochure - Doha Skyline Projects"
             fill
             priority
             className="object-cover"
@@ -141,8 +141,8 @@ export default function ProjectsPage() {
                 Project Execution & Photographic Evidence
               </h1>
               <p className="text-base sm:text-lg text-[#ddede7]/80 leading-relaxed font-normal">
-                Direct photographic evidence of actual MEP, HVAC, firefighting, civil fit-outs, and facilities 
-                contracting successfully completed and handed over across Doha and surrounding municipalities.
+                Direct photographic evidence extracted from pages 9, 10, 11, 17, and 18 of the official Yashin Facilities Management brochure. 
+                All projects completed and handed over in Doha, Qatar.
               </p>
             </div>
           </RevealOnScroll>
@@ -199,7 +199,7 @@ export default function ProjectsPage() {
                   <div className="px-7 pb-7 pt-2 flex items-center justify-between border-t border-[#163b35]/6">
                     <span className="flex items-center gap-1.5 text-xs font-bold text-[#163b35]">
                       <CheckCircle2 className="w-4 h-4 text-[#163b35]" />
-                      <span>Inspected & Verified</span>
+                      <span>{project.source} Verified</span>
                     </span>
                     <span className="text-[11px] font-bold text-[#5e6b66] bg-[#ddede7] px-3 py-1 rounded-full">
                       Qatar Standards

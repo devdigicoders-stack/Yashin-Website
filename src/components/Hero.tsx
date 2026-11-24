@@ -56,15 +56,15 @@ export default function Hero() {
             </RevealOnScroll>
           </div>
 
-          {/* Hero Visual Collage */}
+          {/* Hero Visual Collage using Authentic Brochure Cover & Commercial Building Photos */}
           <div className="lg:col-span-5">
             <RevealOnScroll direction="right" delay={0.15}>
               <div className="relative">
-                {/* Main Hero Visual Card */}
-                <div className="relative h-[420px] sm:h-[480px] rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-xl group">
+                {/* Main Hero Visual Card: Page 1 Authentic Qatar Cover Skyline */}
+                <div className="relative h-[420px] sm:h-[480px] rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-xl group bg-white">
                   <Image
-                    src="/media/about-banner.png"
-                    alt="Doha Qatar Skyline & West Bay Towers"
+                    src="/media/qatar-skyline-hero.png"
+                    alt="Yashin Facilities Qatar Cover - Doha Tornado & Commercial Towers"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 500px"
@@ -75,8 +75,8 @@ export default function Hero() {
                   {/* Floating Overlay Badge */}
                   <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#163b35]/10 flex items-center justify-between">
                     <div>
-                      <p className="text-xs text-[#5e6b66] font-semibold">Active Qatar Projects</p>
-                      <p className="text-sm font-black text-[#163b35]">Doha Towers & Commercial Facilities</p>
+                      <p className="text-xs text-[#5e6b66] font-semibold">C.R. No. 191809 • Doha, Qatar</p>
+                      <p className="text-sm font-black text-[#163b35]">Yashin Facilities Management & Services</p>
                     </div>
                     <div className="w-9 h-9 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-bold text-xs shrink-0">
                       ✦
@@ -84,11 +84,11 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Secondary Inset Visual Card */}
-                <div className="absolute -bottom-8 -left-8 w-44 sm:w-52 h-44 sm:h-52 rounded-3xl overflow-hidden border-4 border-white shadow-2xl hidden sm:block">
+                {/* Secondary Inset Visual Card: Page 11 Real Glass Cladding Building */}
+                <div className="absolute -bottom-8 -left-8 w-44 sm:w-52 h-44 sm:h-52 rounded-3xl overflow-hidden border-4 border-white shadow-2xl hidden sm:block bg-white">
                   <Image
-                    src="/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png"
-                    alt="Premium commercial office tower with curved blue glass facade"
+                    src="/media/acp-glass-commercial-building.png"
+                    alt="Page 11 Authentic Project - Glass Glazing & ACP Cladding Commercial Building"
                     fill
                     sizes="220px"
                     className="object-cover"

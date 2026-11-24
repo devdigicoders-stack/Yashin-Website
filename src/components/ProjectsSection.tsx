@@ -10,44 +10,50 @@ const projects = [
   {
     title: "Chiller Line & Booster Pump Station",
     category: "MEP Engineering",
-    image: "/media/Gemini_Generated_Image_2dwom2dwom2dwom2.png",
+    image: "/media/site-booster-pump.png", // Page 17 on-site booster pump
+    source: "Brochure Page 17",
     description: "Heavy electro-mechanical installation, high-pressure pump manifolds, and acoustic thermal pipe insulation for commercial facility.",
     location: "Doha, Qatar"
   },
   {
     title: "Commercial Glass Glazing & ACP Cladding",
     category: "Civil Facade",
-    image: "/media/Gemini_Generated_Image_izp3vsizp3vsizp3.png",
+    image: "/media/acp-glass-commercial-building.png", // Page 11 on-site commercial complex
+    source: "Brochure Page 11",
     description: "Curtain wall structural glass installation and weather-resistant Aluminium Composite Panel (ACP) exterior envelopment.",
     location: "Commercial Complex"
   },
   {
     title: "Fire Protection Hydrant & Sprinkler Loops",
     category: "Fire Safety",
-    image: "/media/Gemini_Generated_Image_w7l72cw7l72cw7l7.png",
+    image: "/media/site-fire-riser.png", // Page 18 on-site fire riser installation
+    source: "Brochure Page 18",
     description: "Complete installation and testing of automated fire sprinklers, hydrant risers, and emergency alarm monitoring panels.",
     location: "Industrial & Logistics Park"
   },
   {
     title: "Underground Utility Trenching & Conduit Laying",
     category: "Infrastructure",
-    image: "/media/Gemini_Generated_Image_5p8z7i5p8z7i5p8z.png",
+    image: "/media/site-underground-trench.png", // Page 17 on-site underground trench
+    source: "Brochure Page 17",
     description: "Deep excavation, underground cable pathways, conduit containment, and specialized high-grade gas utility lines.",
     location: "Utility Corridor"
   },
   {
     title: "Architectural Gypsum & False Ceiling Works",
     category: "Interior Fit-out",
-    image: "/media/Gemini_Generated_Image_3d4a4s3d4a4s3d4a.png",
+    image: "/media/gypsum-spiral-ceiling.png", // Page 9 on-site gypsum ceiling
+    source: "Brochure Page 9",
     description: "Custom geometric false ceilings, indirect LED ambient lighting channels, and fire-resistant drywall partitions.",
     location: "Corporate Headquarters"
   },
   {
-    title: "Protective Floor Screeding & Waterproofing",
-    category: "Civil Contracting",
-    image: "/media/Gemini_Generated_Image_mr1bkwmr1bkwmr1b.png",
-    description: "Heavy-duty industrial anti-slip epoxy coatings, floor line markings, and full roof membrane waterproofing.",
-    location: "Warehouse Facility"
+    title: "Insulated Chiller Pipe Networks & Acoustic Jacketing",
+    category: "HVAC Engineering",
+    image: "/media/site-chiller-manifold.png", // Page 18 on-site chiller manifold
+    source: "Brochure Page 18",
+    description: "Heavy-duty thermal vapor barriers, silver jacketed chilled water distribution loops, and acoustic isolation.",
+    location: "Commercial HVAC Plant"
   }
 ];
 
@@ -67,7 +73,7 @@ export default function ProjectsSection() {
                 Real Projects Executed in Qatar.
               </h2>
               <p className="mt-4 text-[#5e6b66] text-base leading-relaxed">
-                A track record of precision, technical compliance, and timely delivery across Qatar's private and commercial sectors.
+                Authentic photographic evidence of actual installations extracted directly from Yashin Facilities Management corporate portfolio.
               </p>
             </div>
 
@@ -88,7 +94,7 @@ export default function ProjectsSection() {
                 className="rounded-3xl bg-[#ffffff] border border-[#163b35]/8 hover:border-[#163b35]/25 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full"
               >
                 <div>
-                  {/* Real Project Photographic Thumbnail */}
+                  {/* Real Project Photographic Thumbnail from Brochure Pages 9, 11, 17, 18 */}
                   <div className="relative h-52 w-full overflow-hidden bg-[#163b35]/5">
                     <Image
                       src={item.image}
@@ -102,12 +108,15 @@ export default function ProjectsSection() {
                         {item.location}
                       </span>
                       <span className="text-[11px] font-bold text-white px-3 py-1 rounded-full bg-[#163b35]/90 backdrop-blur-xs">
-                        {item.category}
+                        {item.source}
                       </span>
                     </div>
                   </div>
 
                   <div className="p-7">
+                    <div className="text-[11px] font-bold text-[#5e6b66] uppercase tracking-wider mb-1">
+                      {item.category}
+                    </div>
                     <h3 className="text-xl font-bold text-[#163b35] mb-2 leading-snug">
                       {item.title}
                     </h3>
@@ -142,7 +151,7 @@ export default function ProjectsSection() {
               <span className="text-xs text-[#d8f36a] font-bold uppercase tracking-wider">Qatar Engineering Archives</span>
               <h3 className="text-2xl sm:text-3xl font-black mt-1">Explore Our Complete On-Site Photo Portfolio</h3>
               <p className="text-sm text-[#ddede7]/80 mt-2 max-w-xl">
-                Inspect authentic project evidence: chillers, utility trenching, substation cabling, gypsum fit-outs, and manpower toolbox briefings.
+                Inspect authentic project evidence from pages 9, 11, 17, and 18: chillers, utility trenching, substation cabling, gypsum fit-outs, and manpower toolbox briefings.
               </p>
             </div>
             <Link

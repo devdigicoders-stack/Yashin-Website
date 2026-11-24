@@ -24,12 +24,12 @@ export default function AboutPage() {
     <main className="min-h-screen flex flex-col bg-[#f7f8f5]">
       <Navbar />
 
-      {/* Hero Banner with Skyline Image */}
+      {/* Hero Banner with Page 3 Doha West Bay Night Skyline */}
       <section className="relative py-24 sm:py-32 bg-[#163b35] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-25">
           <Image
-            src="/media/about-banner.png"
-            alt="Doha Skyline"
+            src="/media/doha-night-skyline.png"
+            alt="Page 3 Brochure - Doha West Bay Night Skyline"
             fill
             priority
             className="object-cover"
@@ -53,7 +53,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 1: About Us Narrative with Executive Partnership Visual */}
+      {/* SECTION 1: About Us Narrative with Page 2 Handshake Banner */}
       <section className="py-20 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -85,13 +85,13 @@ export default function AboutPage() {
               </RevealOnScroll>
             </div>
 
-            {/* Visual Spotlight: Partnership Image & Technology Interface */}
+            {/* Visual Spotlight: Page 2 Handshake & Page 4 Digital Business Touch */}
             <div className="lg:col-span-5 space-y-6">
               <RevealOnScroll direction="right" delay={0.1}>
-                <div className="relative h-64 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group">
+                <div className="relative h-64 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-[#0d2723]">
                   <Image
-                    src="/media/Gemini_Generated_Image_28mi0w28mi0w28mi.png"
-                    alt="Corporate Partnership and Agreement"
+                    src="/media/handshake-banner.png"
+                    alt="Brochure Page 2 - Corporate Welcome Handshake"
                     fill
                     sizes="(max-width: 1024px) 100vw, 450px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -105,18 +105,18 @@ export default function AboutPage() {
 
               <RevealOnScroll direction="right" delay={0.2}>
                 <div className="p-6 rounded-3xl bg-[#f7f8f5] border border-[#163b35]/8 flex items-center gap-4">
-                  <div className="relative w-16 h-16 rounded-2xl overflow-hidden shrink-0 border border-[#163b35]/15">
+                  <div className="relative w-16 h-16 rounded-2xl overflow-hidden shrink-0 border border-[#163b35]/15 bg-white">
                     <Image
-                      src="/media/introduction.png"
-                      alt="Smart Facility Technology Display"
+                      src="/media/digital-business-touch.png"
+                      alt="Brochure Page 4 - Digital Business Technology Touch"
                       fill
                       sizes="64px"
                       className="object-cover"
                     />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#163b35]">Smart Facility Integration</h4>
-                    <p className="text-xs text-[#5e6b66] mt-0.5">Automated schedules, predictive MEP monitoring, and continuous on-site logging.</p>
+                    <h4 className="text-sm font-bold text-[#163b35]">Dynamic Management (Page 4)</h4>
+                    <p className="text-xs text-[#5e6b66] mt-0.5">Creating an environment where every worker feels involved and committed to client success.</p>
                   </div>
                 </div>
               </RevealOnScroll>
@@ -126,7 +126,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 2: Leadership with Real Portraits */}
+      {/* SECTION 2: Leadership with Page 2 Exact Portraits */}
       <section className="py-20 bg-[#f7f8f5] border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <RevealOnScroll direction="up">
@@ -144,10 +144,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <RevealOnScroll direction="up" delay={0.1}>
               <div className="p-8 rounded-3xl bg-white border border-[#163b35]/8 shadow-sm hover:shadow-xl hover:border-[#163b35]/25 transition-all duration-300 flex flex-col sm:flex-row items-center gap-6 group">
-                <div className="relative w-28 h-28 rounded-2xl overflow-hidden shrink-0 border-2 border-[#163b35]/10 shadow-md">
+                <div className="relative w-28 h-28 rounded-2xl overflow-hidden shrink-0 border-2 border-[#163b35]/10 shadow-md bg-[#ddede7]">
                   <Image
-                    src="/media/aboutus.png"
-                    alt="Md. Somun Abdul - Managing Director"
+                    src="/media/md-somun-abdul.png"
+                    alt="Md. Somun Abdul - Managing Director (Page 2)"
                     fill
                     sizes="112px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -167,10 +167,10 @@ export default function AboutPage() {
 
             <RevealOnScroll direction="up" delay={0.2}>
               <div className="p-8 rounded-3xl bg-white border border-[#163b35]/8 shadow-sm hover:shadow-xl hover:border-[#163b35]/25 transition-all duration-300 flex flex-col sm:flex-row items-center gap-6 group">
-                <div className="relative w-28 h-28 rounded-2xl overflow-hidden shrink-0 border-2 border-[#163b35]/10 shadow-md">
+                <div className="relative w-28 h-28 rounded-2xl overflow-hidden shrink-0 border-2 border-[#163b35]/10 shadow-md bg-[#ddede7]">
                   <Image
-                    src="/media/aboutus (2).png"
-                    alt="Omar Faruk - Operational Supervisor"
+                    src="/media/omar-faruk.png"
+                    alt="Omar Faruk - Operational Supervisor (Page 2)"
                     fill
                     sizes="112px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -191,7 +191,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 3: Field Team & Site Manpower Showcase */}
+      {/* SECTION 3: Field Team & Site Manpower Showcase using Page 11 Real Project Photos */}
       <section className="py-20 bg-white border-b border-[#163b35]/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -221,20 +221,35 @@ export default function AboutPage() {
               </RevealOnScroll>
             </div>
 
-            <div className="lg:col-span-6">
-              <RevealOnScroll direction="right">
-                <div className="relative h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-xl group">
+            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
+              <RevealOnScroll direction="right" delay={0.1}>
+                <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-white">
                   <Image
-                    src="/media/Gemini_Generated_Image_1r8fmb1r8fmb1r8f.png"
-                    alt="Workforce site safety toolbox briefing in Qatar"
+                    src="/media/site-safety-toolbox-1.png"
+                    alt="Page 11 - Site Safety Toolbox Briefing 1"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 550px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 1024px) 50vw, 280px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 text-white">
-                    <p className="text-xs font-bold text-[#d8f36a] uppercase">Active Field Coordination</p>
-                    <p className="text-sm font-semibold">Morning Toolbox Meeting & Safety Standards Briefing</p>
+                  <div className="absolute bottom-3 left-3 right-3 text-white text-[11px] font-bold">
+                    Toolbox Safety Meeting (Page 11)
+                  </div>
+                </div>
+              </RevealOnScroll>
+
+              <RevealOnScroll direction="right" delay={0.2}>
+                <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden border border-[#163b35]/10 shadow-lg group bg-white">
+                  <Image
+                    src="/media/overhead-mep-crew.png"
+                    alt="Page 11 - Overhead MEP Ducting Crew on Scaffolding"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 280px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#163b35]/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3 text-white text-[11px] font-bold">
+                    Overhead MEP Crew (Page 11)
                   </div>
                 </div>
               </RevealOnScroll>
@@ -244,69 +259,102 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Core Pillars & Vision */}
+      {/* SECTION 4: Page 5 Core Pillars with Authentic Brochure Imagery */}
       <section className="py-20 bg-[#163b35] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <RevealOnScroll direction="up">
             <div className="max-w-2xl mb-12">
-              <span className="text-xs font-bold text-[#d8f36a] uppercase tracking-wider">Foundational Principles</span>
+              <span className="text-xs font-bold text-[#d8f36a] uppercase tracking-wider">Foundational Principles (Page 5)</span>
               <h2 className="text-3xl sm:text-4xl font-black mt-2">
-                Our Mission, Values & Operational Standards
+                Our Objective, Values & Integrity
               </h2>
             </div>
           </RevealOnScroll>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <RevealOnScroll direction="up" delay={0.05}>
-              <div className="p-8 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between">
-                <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black mb-6">
-                    <Target className="w-6 h-6" />
+              <div className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between overflow-hidden">
+                <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
+                  <Image
+                    src="/media/objective-tablet.png"
+                    alt="Page 5 - Objective Water Splash Tablet"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black">
+                      <Target className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Our Mission</h3>
-                  <p className="text-xs text-[#ddede7]/70 leading-relaxed">
-                    To deliver premier technical MEP maintenance, cleaning, and facilities contracting services in Qatar 
-                    with speed, unyielding safety standards, and transparent collaboration.
-                  </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
-                  Service Quality
+                <div className="p-7">
+                  <h3 className="text-xl font-bold text-white mb-2">Our Objective</h3>
+                  <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
+                    Striving to achieve excellence in facility and MEP services across Doha, Qatar through 
+                    creativity, responsiveness, and uncompromising quality standards.
+                  </p>
+                  <div className="pt-3 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
+                    Brochure Page 5
+                  </div>
                 </div>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.15}>
-              <div className="p-8 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between">
-                <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black mb-6">
-                    <Compass className="w-6 h-6" />
+              <div className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between overflow-hidden">
+                <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
+                  <Image
+                    src="/media/eco-sustainability.png"
+                    alt="Page 5 - Value Eco Tree in Hand"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black">
+                      <Compass className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Our Vision</h3>
-                  <p className="text-xs text-[#ddede7]/70 leading-relaxed">
-                    To be the top-tier facilities management and engineering partner recognized throughout the State of Qatar 
-                    for elevating workplace standards and residential hygiene.
-                  </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
-                  Forward Growth
+                <div className="p-7">
+                  <h3 className="text-xl font-bold text-white mb-2">Corporate Values</h3>
+                  <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
+                    Embracing modern engineering approaches and flexible teamwork that guide day-to-day 
+                    decisions and provide a common language to communicate through performance.
+                  </p>
+                  <div className="pt-3 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
+                    Brochure Page 5
+                  </div>
                 </div>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll direction="up" delay={0.25}>
-              <div className="p-8 rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between">
-                <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black mb-6">
-                    <Shield className="w-6 h-6" />
+              <div className="rounded-3xl bg-[#0d2723] border border-[#ddede7]/10 h-full flex flex-col justify-between overflow-hidden">
+                <div className="relative h-44 w-full overflow-hidden bg-[#163b35]">
+                  <Image
+                    src="/media/integrity-pledge.png"
+                    alt="Page 5 - Integrity Pledge Hand Over Heart"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <div className="w-10 h-10 rounded-full bg-[#d8f36a] text-[#163b35] flex items-center justify-center font-black">
+                      <Shield className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">QHSE Compliance</h3>
-                  <p className="text-xs text-[#ddede7]/70 leading-relaxed">
-                    Quality, Health, Safety, and Environment are ingrained into every action. We operate under zero-tolerance 
-                    for unsafe work conditions and maintain fully insured operations.
-                  </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
-                  Safety First
+                <div className="p-7">
+                  <h3 className="text-xl font-bold text-white mb-2">Integrity First</h3>
+                  <p className="text-xs text-[#ddede7]/70 leading-relaxed mb-4">
+                    Reaching the right decisions faster with absolute transparency in actions and motives. 
+                    Living by "Walk the talk" and fostering true comradeship & brotherhood.
+                  </p>
+                  <div className="pt-3 border-t border-[#ddede7]/10 text-[11px] text-[#d8f36a] font-semibold uppercase">
+                    Brochure Page 5
+                  </div>
                 </div>
               </div>
             </RevealOnScroll>
