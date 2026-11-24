@@ -41,12 +41,12 @@ export default function Navbar() {
       {/* Main Clevaro Navbar: Official Yashin FMS Logo Emblem, Center Pill Navigation, Right Lime CTA Button */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between">
         
-        {/* Brand Logo with Official Yashin FMS Emblem */}
+        {/* Brand Logo with Official Yashin FMS Emblem & Full Corporate Name */}
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-11 h-11 rounded-xl overflow-hidden bg-white p-1 border border-[#163b35]/15 shadow-sm group-hover:scale-105 transition-transform shrink-0 flex items-center justify-center">
             <Image
               src="/media/yashin-logo.png"
-              alt="Yashin Facilities Management FMS Logo"
+              alt="Yashin Facilities Management & Services W.L.L. Logo"
               width={40}
               height={40}
               priority
@@ -54,11 +54,11 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-black tracking-tight text-[#163b35] leading-none uppercase">
-              YASHIN
+            <span className="text-base sm:text-lg font-black tracking-tight text-[#163b35] leading-none uppercase">
+              YASHIN FACILITIES
             </span>
-            <span className="text-[10px] text-[#5e6b66] font-bold tracking-wider uppercase mt-0.5">
-              FACILITIES W.L.L.
+            <span className="text-[10px] sm:text-[11px] text-[#5e6b66] font-bold tracking-wider uppercase mt-1">
+              MANAGEMENT & SERVICES W.L.L.
             </span>
           </div>
         </Link>
