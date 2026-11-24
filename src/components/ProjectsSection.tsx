@@ -84,8 +84,8 @@ export default function ProjectsSection() {
           {projects.map((item, idx) => (
             <RevealOnScroll key={idx} direction="up" delay={idx * 0.08}>
               <motion.div
-                whileHover={{ y: -6, transition: { duration: 0.2 } }}
-                className="overflow-hidden rounded-3xl bg-[#ffffff] border border-[#163b35]/8 hover:border-[#163b35]/25 hover:shadow-lg transition-all duration-200 flex flex-col justify-between h-full group"
+                whileHover={{ y: -8, rotate: idx % 2 === 0 ? -1.2 : 1.2, transition: { duration: 0.25 } }}
+                className="overflow-hidden rounded-3xl bg-[#ffffff] border border-[#163b35]/8 hover:border-[#163b35] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full group"
               >
                 <div>
                   {/* Project Image */}

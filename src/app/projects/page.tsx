@@ -87,16 +87,16 @@ export default function ProjectsPage() {
       <Navbar />
 
       {/* Header Banner with Doha Skyline Background */}
-      <section className="relative py-24 sm:py-32 bg-[#163b35] text-white overflow-hidden">
+      <section className="relative py-24 sm:py-32 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/media/about-banner.png"
             alt="Doha Skyline Night"
             fill
             priority
-            className="object-cover opacity-25"
+            className="object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#163b35] via-[#163b35]/90 to-[#163b35]/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#163b35]/90 via-[#163b35]/65 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">

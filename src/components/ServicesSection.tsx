@@ -144,8 +144,8 @@ export default function ServicesSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.3, delay: idx * 0.04 }}
-                whileHover={{ y: -6, transition: { duration: 0.2 } }}
-                className="rounded-3xl bg-[#f7f8f5] overflow-hidden border border-[#163b35]/8 hover:border-[#163b35]/25 hover:shadow-lg transition-all duration-200 flex flex-col justify-between group"
+                whileHover={{ y: -8, rotate: idx % 2 === 0 ? 1 : -1, transition: { duration: 0.25 } }}
+                className="rounded-3xl bg-[#f7f8f5] overflow-hidden border border-[#163b35]/8 hover:border-[#163b35] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Card Image */}
