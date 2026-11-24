@@ -31,13 +31,14 @@ export default function ServicesPage() {
       <section className="relative py-14 sm:py-18 bg-[#0e2722] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/media/Gemini_Generated_Image_if39cgif39cgif39.png"
-            alt="Qatar Engineering Skyline"
+            src="/media/Gemini_Generated_Image_1wf6iz1wf6iz1wf6.png"
+            alt="Qatar Engineering Infrastructure & Services"
             fill
             priority
-            className="object-cover opacity-60"
+            className="object-cover opacity-50 object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#163b35]/90 via-[#163b35]/65 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#163b35]/95 via-[#163b35]/70 to-[#163b35]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0e2722] via-transparent to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
