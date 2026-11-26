@@ -6,9 +6,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, Sparkles } from "lucide-react";
+import EnquiryModal from "./EnquiryModal";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const pathname = usePathname();
 
   const navLinks = [
@@ -90,15 +92,15 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right Action: Clevaro Lime CTA Pill Button */}
+        {/* Right Action: Clevaro Lime CTA Pill Button opening Enquiry Modal */}
         <div className="hidden lg:flex items-center space-x-3">
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#d8f36a] hover:bg-[#c8e658] text-[#163b35] font-bold text-xs tracking-tight transition-all shadow-xs hover:scale-105"
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#d8f36a] hover:bg-[#c8e658] text-[#163b35] font-bold text-xs tracking-tight transition-all shadow-xs hover:scale-105 cursor-pointer"
           >
             <span>Book Consultation</span>
             <ArrowUpRight className="w-3.5 h-3.5 text-[#163b35]" />
-          </Link>
+          </button>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -137,19 +139,24 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="pt-4 border-t border-[#163b35]/10">
-                <Link
-                  href="/contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#d8f36a] text-[#163b35] font-bold text-sm tracking-tight"
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setIsModalOpen(true);
+                  }}
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#d8f36a] text-[#163b35] font-bold text-sm tracking-tight cursor-pointer"
                 >
                   <span>Book Consultation</span>
                   <ArrowUpRight className="w-4 h-4" />
-                </Link>
+                </button>
               </div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Reusable Enquiry Modal */}
+      <EnquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
     </header>
   );
