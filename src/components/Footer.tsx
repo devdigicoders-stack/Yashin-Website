@@ -1,35 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-[#163b35] text-[#f7f8f5] border-t border-[#ddede7]/10">
-      
-      {/* Clevaro Exact Footer Banner: "Ready for a Cleaner Tomorrow?" */}
-      <div className="border-b border-[#ddede7]/10 py-16 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <span className="text-xs font-bold text-[#d8f36a] uppercase tracking-wider mb-2 block">
-              Qatar Facilities Management
-            </span>
-            <h3 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-              Ready for a Cleaner Tomorrow?
-            </h3>
-            <p className="text-sm text-[#ddede7]/70 mt-2 max-w-lg">
-              Serving residential, corporate, hotel, and industrial properties in Qatar since 2014.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#d8f36a] hover:bg-[#c8e658] text-[#163b35] font-bold text-sm tracking-tight transition-all shrink-0 hover:scale-105"
-          >
-            <span>Book an Inspection</span>
-            <ArrowUpRight className="w-4 h-4 text-[#163b35]" />
-          </Link>
-        </div>
-      </div>
-
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
